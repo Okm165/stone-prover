@@ -1,0 +1,8 @@
+cpu_air_prover
+cpu_air_verifier
+fibonacci_compiled.json
+fibonacci_memory.json
+fibonacci_private_input.json
+fibonacci_public_input.json
+fibonacci_trace.json
+fibonacci_proof.json

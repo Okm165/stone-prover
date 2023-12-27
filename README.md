@@ -33,8 +33,8 @@ Once the docker image is built, you can fetch the prover and verifier executable
 
 ```bash
 container_id=$(docker create prover)
-docker cp -L ${container_id}:/bin/cpu_air_prover .
-docker cp -L ${container_id}:/bin/cpu_air_verifier .
+docker cp -L ${container_id}:/bin/cpu_air_prover ./e2e_test
+docker cp -L ${container_id}:/bin/cpu_air_verifier ./e2e_test
 ```
 
 ## Creating and verifying a proof of a CairoZero program
@@ -64,7 +64,7 @@ Run the compiled program to generate the prover input files:
 ```bash
 cairo-run \
     --program=fibonacci_compiled.json \
-    --layout=small \
+    --layout=starknet_with_keccak \
     --program_input=fibonacci_input.json \
     --air_public_input=fibonacci_public_input.json \
     --air_private_input=fibonacci_private_input.json \
@@ -76,12 +76,13 @@ cairo-run \
 
 Run the prover:
 ```bash
-cpu_air_prover \
+./cpu_air_prover \
     --out_file=fibonacci_proof.json \
     --private_input_file=fibonacci_private_input.json \
     --public_input_file=fibonacci_public_input.json \
     --prover_config_file=cpu_air_prover_config.json \
-    --parameter_file=cpu_air_params.json
+    --parameter_file=cpu_air_params.json \
+    -generate_annotations
 ```
 
 The proof is now available in the file `fibonacci_proof.json`.
