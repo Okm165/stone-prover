@@ -20,22 +20,28 @@ func main(
     alloc_locals;
 
     // Load fibonacci_claim_index and copy it to the output segment.
-    local fibonacci_claim_index;
-    %{ ids.fibonacci_claim_index = program_input['fibonacci_claim_index'] %}
+    local a;
+    local b;
+    local n;
+    %{ ids.a = program_input['a'] %}
+    %{ ids.b = program_input['b'] %}
+    %{ ids.n = program_input['n'] %}
 
-    assert output_ptr[0] = fibonacci_claim_index;
-    let res = fib(1, 1, fibonacci_claim_index);
-    assert output_ptr[1] = res;
+    let (first_element, second_element) = fib(a, b, n);
+
+    assert output_ptr[0] = n;
+    assert output_ptr[1] = first_element;
+    assert output_ptr[2] = second_element;
 
     // Return the updated output_ptr.
     return (
-        output_ptr=&output_ptr[2], pedersen_ptr=pedersen_ptr, range_check_ptr=range_check_ptr, bitwise_ptr=bitwise_ptr
+        output_ptr=&output_ptr[3], pedersen_ptr=pedersen_ptr, range_check_ptr=range_check_ptr, bitwise_ptr=bitwise_ptr
     );
 }
 
-func fib(first_element: felt, second_element: felt, n: felt) -> felt {
+func fib(first_element: felt, second_element: felt, n: felt) -> (first_element: felt, second_element: felt) {
     if (n == 0) {
-        return second_element;
+        return (first_element=first_element, second_element=second_element);
     }
 
     return fib(
