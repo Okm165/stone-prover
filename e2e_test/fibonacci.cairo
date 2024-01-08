@@ -18,11 +18,18 @@ func main(
         ids.n = program_input['n']
     %}
 
+    if (program_hash == 0) {
+        assert a = 1;
+        assert b = 1;
+    } else {
+        //
+    }
+
     let (c, d) = fib(a, b, n);
 
-    assert output_ptr[0] = n;
-    assert output_ptr[1] = c;
-    assert output_ptr[2] = d;
+    assert output_ptr[0] = c;
+    assert output_ptr[1] = d;
+    assert output_ptr[2] = n;
 
     // Return the updated output_ptr.
     return (
