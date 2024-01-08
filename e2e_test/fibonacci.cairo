@@ -1,17 +1,3 @@
-// Copyright 2023 StarkWare Industries Ltd.
-//
-// Licensed under the Apache License, Version 2.0 (the "License").
-// You may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// https://www.starkware.co/open-source-license/
-//
-// Unless required by applicable law or agreed to in writing,
-// software distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions
-// and limitations under the License.
-
 %builtins output pedersen range_check bitwise
 func main(
     output_ptr: felt*, pedersen_ptr: felt*, range_check_ptr: felt*, bitwise_ptr: felt*) -> (
@@ -19,19 +5,24 @@ func main(
         ) {
     alloc_locals;
 
-    // Load fibonacci_claim_index and copy it to the output segment.
+    local program_hash;
+    local output_hash;
     local a;
     local b;
     local n;
-    %{ ids.a = program_input['a'] %}
-    %{ ids.b = program_input['b'] %}
-    %{ ids.n = program_input['n'] %}
+    %{ 
+        ids.program_hash = program_input['program_hash']
+        ids.output_hash = program_input['output_hash']
+        ids.a = program_input['a']
+        ids.b = program_input['b']
+        ids.n = program_input['n']
+    %}
 
-    let (first_element, second_element) = fib(a, b, n);
+    let (c, d) = fib(a, b, n);
 
     assert output_ptr[0] = n;
-    assert output_ptr[1] = first_element;
-    assert output_ptr[2] = second_element;
+    assert output_ptr[1] = c;
+    assert output_ptr[2] = d;
 
     // Return the updated output_ptr.
     return (
