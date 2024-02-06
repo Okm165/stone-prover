@@ -1,8 +1,10 @@
-%builtins output pedersen range_check bitwise
+%builtins output pedersen range_check ecdsa bitwise ec_op keccak poseidon
 func main(
-    output_ptr: felt*, pedersen_ptr: felt*, range_check_ptr: felt*, bitwise_ptr: felt*) -> (
-           output_ptr: felt*, pedersen_ptr: felt*, range_check_ptr: felt*, bitwise_ptr: felt*
-        ) {
+    output_ptr: felt*, pedersen_ptr: felt*, range_check_ptr: felt*,ecdsa_ptr: felt*,
+    bitwise_ptr: felt*, ec_op_ptr: felt*, keccak_ptr: felt*, poseidon_ptr: felt*) -> (
+            output_ptr: felt*, pedersen_ptr: felt*, range_check_ptr: felt*, ecdsa_ptr: felt*,
+            bitwise_ptr: felt*, ec_op_ptr: felt*, keccak_ptr: felt*, poseidon_ptr: felt*
+            ) {
     alloc_locals;
 
     local program_hash;
@@ -33,7 +35,8 @@ func main(
 
     // Return the updated output_ptr.
     return (
-        output_ptr=&output_ptr[3], pedersen_ptr=pedersen_ptr, range_check_ptr=range_check_ptr, bitwise_ptr=bitwise_ptr
+        output_ptr=&output_ptr[3], pedersen_ptr=pedersen_ptr, range_check_ptr=range_check_ptr, ecdsa_ptr=ecdsa_ptr,
+        bitwise_ptr=bitwise_ptr, ec_op_ptr=ec_op_ptr, keccak_ptr=keccak_ptr, poseidon_ptr=poseidon_ptr
     );
 }
 
