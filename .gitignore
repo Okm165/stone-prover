@@ -1,8 +1,9 @@
 cpu_air_prover
 cpu_air_verifier
-fibonacci_compiled.json
-fibonacci_memory.json
-fibonacci_private_input.json
-fibonacci_public_input.json
-fibonacci_trace.json
-fibonacci_proof.json
+program_compiled.json
+program_input.json
+memory.json
+private_input.json
+public_input.json
+trace.json
+proof.json
