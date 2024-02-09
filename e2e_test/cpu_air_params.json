@@ -3,7 +3,7 @@
     "channel_hash": "keccak256",
     "commitment_hash": "keccak256_masked160_lsb",
     "verifier_friendly_commitment_hash": "pedersen",
-    "n_verifier_friendly_commitment_layers": 100,
+    "n_verifier_friendly_commitment_layers": 0,
     "statement": {
         "page_hash": "pedersen"
     },
