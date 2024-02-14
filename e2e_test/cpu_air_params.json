@@ -3,7 +3,7 @@
     "channel_hash": "blake256",
     "commitment_hash": "blake256_masked160_lsb",
     "verifier_friendly_commitment_hash": "pedersen",
-    "n_verifier_friendly_commitment_layers": 9999,
+    "n_verifier_friendly_commitment_layers": 10,
     "statement": {
         "page_hash": "pedersen"
     },
@@ -13,9 +13,10 @@
                 0,
                 4,
                 4,
-                2
+                4,
+                3
             ],
-            "last_layer_degree_bound": 2048,
+            "last_layer_degree_bound": 64,
             "n_queries": 18,
             "proof_of_work_bits": 30
         },
