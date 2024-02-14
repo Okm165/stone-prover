@@ -14,13 +14,14 @@
                 4,
                 4,
                 4,
+                4,
                 4
             ],
-            "last_layer_degree_bound": 2048,
-            "n_queries": 18,
+            "last_layer_degree_bound": 128,
+            "n_queries": 10,
             "proof_of_work_bits": 30
         },
-        "log_n_cosets": 1
+        "log_n_cosets": 3
     },
 
     "use_extension_field": false
