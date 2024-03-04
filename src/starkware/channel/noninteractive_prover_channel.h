@@ -63,7 +63,7 @@ class NoninteractiveProverChannel : public ProverChannel {
 
   std::vector<std::byte> GetProof() const;
 
- private:
+ public:
   std::unique_ptr<PrngBase> prng_;
   std::vector<std::byte> proof_{};
 };

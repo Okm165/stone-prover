@@ -263,59 +263,59 @@ FractionFieldElement<FieldElementT> CpuAirDefinition<FieldElementT, 10>::Constra
   const FieldElementT memory__address_diff_0 = (column4_row2) - (column4_row0);
   const FieldElementT rc16__diff_0 = (column2_row1) - (column2_row0);
   FractionFieldElement<FieldElementT> res(FieldElementT::Zero());
-  {
-    // Compute a sum of constraints with denominator = domain0.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain0.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = domain3.
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for cpu/decode/opcode_rc/bit:
-        const FieldElementT constraint =
-            ((cpu__decode__opcode_rc__bit_0) * (cpu__decode__opcode_rc__bit_0)) -
-            (cpu__decode__opcode_rc__bit_0);
-        inner_sum += random_coefficients[0] * constraint;
-      }
-      outer_sum += inner_sum * domain3;
-    }
+  //   {
+  //     // Compute a sum of constraints with numerator = domain3.
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for cpu/decode/opcode_rc/bit:
+  //       const FieldElementT constraint =
+  //           ((cpu__decode__opcode_rc__bit_0) * (cpu__decode__opcode_rc__bit_0)) -
+  //           (cpu__decode__opcode_rc__bit_0);
+  //       inner_sum += random_coefficients[0] * constraint;
+  //     }
+  //     outer_sum += inner_sum * domain3;
+  //   }
 
-    {
-      // Compute a sum of constraints with numerator = domain5.
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for rc16/perm/step0:
-        const FieldElementT constraint =
-            (((rc16__perm__interaction_elm_) - (column2_row1)) * (column6_inter1_row1)) -
-            (((rc16__perm__interaction_elm_) - (column0_row1)) * (column6_inter1_row0));
-        inner_sum += random_coefficients[42] * constraint;
-      }
-      {
-        // Constraint expression for rc16/diff_is_bit:
-        const FieldElementT constraint = ((rc16__diff_0) * (rc16__diff_0)) - (rc16__diff_0);
-        inner_sum += random_coefficients[44] * constraint;
-      }
-      outer_sum += inner_sum * domain5;
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain0);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = domain5.
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for rc16/perm/step0:
+  //       const FieldElementT constraint =
+  //           (((rc16__perm__interaction_elm_) - (column2_row1)) * (column6_inter1_row1)) -
+  //           (((rc16__perm__interaction_elm_) - (column0_row1)) * (column6_inter1_row0));
+  //       inner_sum += random_coefficients[42] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for rc16/diff_is_bit:
+  //       const FieldElementT constraint = ((rc16__diff_0) * (rc16__diff_0)) - (rc16__diff_0);
+  //       inner_sum += random_coefficients[44] * constraint;
+  //     }
+  //     outer_sum += inner_sum * domain5;
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain0);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain3.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain3.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for cpu/decode/opcode_rc/zero:
-        const FieldElementT constraint = column1_row0;
-        inner_sum += random_coefficients[1] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain3);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for cpu/decode/opcode_rc/zero:
+  //       const FieldElementT constraint = column1_row0;
+  //       inner_sum += random_coefficients[1] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain3);
+  // }
 
   {
     // Compute a sum of constraints with denominator = domain4.
@@ -324,392 +324,442 @@ FractionFieldElement<FieldElementT> CpuAirDefinition<FieldElementT, 10>::Constra
     {
       // Compute a sum of constraints with numerator = FieldElementT::One().
       FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for cpu/decode/opcode_rc_input:
-        const FieldElementT constraint =
-            (column3_row1) -
-            (((((((column1_row0) * (offset_size_)) + (column0_row4)) * (offset_size_)) +
-               (column0_row8)) *
-              (offset_size_)) +
-             (column0_row0));
-        inner_sum += random_coefficients[2] * constraint;
-      }
-      {
-        // Constraint expression for cpu/decode/flag_op1_base_op0_bit:
-        const FieldElementT constraint =
-            ((cpu__decode__flag_op1_base_op0_0) * (cpu__decode__flag_op1_base_op0_0)) -
-            (cpu__decode__flag_op1_base_op0_0);
-        inner_sum += random_coefficients[3] * constraint;
-      }
-      {
-        // Constraint expression for cpu/decode/flag_res_op1_bit:
-        const FieldElementT constraint =
-            ((cpu__decode__flag_res_op1_0) * (cpu__decode__flag_res_op1_0)) -
-            (cpu__decode__flag_res_op1_0);
-        inner_sum += random_coefficients[4] * constraint;
-      }
-      {
-        // Constraint expression for cpu/decode/flag_pc_update_regular_bit:
-        const FieldElementT constraint =
-            ((cpu__decode__flag_pc_update_regular_0) * (cpu__decode__flag_pc_update_regular_0)) -
-            (cpu__decode__flag_pc_update_regular_0);
-        inner_sum += random_coefficients[5] * constraint;
-      }
-      {
-        // Constraint expression for cpu/decode/fp_update_regular_bit:
-        const FieldElementT constraint =
-            ((cpu__decode__fp_update_regular_0) * (cpu__decode__fp_update_regular_0)) -
-            (cpu__decode__fp_update_regular_0);
-        inner_sum += random_coefficients[6] * constraint;
-      }
-      {
-        // Constraint expression for cpu/operands/mem_dst_addr:
-        const FieldElementT constraint =
-            ((column3_row8) + (half_offset_size_)) -
-            ((((cpu__decode__opcode_rc__bit_0) * (column5_row8)) +
-              (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_0)) * (column5_row0))) +
-             (column0_row0));
-        inner_sum += random_coefficients[7] * constraint;
-      }
-      {
-        // Constraint expression for cpu/operands/mem0_addr:
-        const FieldElementT constraint =
-            ((column3_row4) + (half_offset_size_)) -
-            ((((cpu__decode__opcode_rc__bit_1) * (column5_row8)) +
-              (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_1)) * (column5_row0))) +
-             (column0_row8));
-        inner_sum += random_coefficients[8] * constraint;
-      }
-      {
-        // Constraint expression for cpu/operands/mem1_addr:
-        const FieldElementT constraint = ((column3_row12) + (half_offset_size_)) -
-                                         ((((((cpu__decode__opcode_rc__bit_2) * (column3_row0)) +
-                                             ((cpu__decode__opcode_rc__bit_4) * (column5_row0))) +
-                                            ((cpu__decode__opcode_rc__bit_3) * (column5_row8))) +
-                                           ((cpu__decode__flag_op1_base_op0_0) * (column3_row5))) +
-                                          (column0_row4));
-        inner_sum += random_coefficients[9] * constraint;
-      }
+      // {
+      //   // Constraint expression for cpu/decode/opcode_rc_input:
+      //   const FieldElementT constraint =
+      //       (column3_row1) -
+      //       (((((((column1_row0) * (offset_size_)) + (column0_row4)) * (offset_size_)) +
+      //          (column0_row8)) *
+      //         (offset_size_)) +
+      //        (column0_row0));
+      //   inner_sum += random_coefficients[2] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/decode/flag_op1_base_op0_bit:
+      //   const FieldElementT constraint =
+      //       ((cpu__decode__flag_op1_base_op0_0) * (cpu__decode__flag_op1_base_op0_0)) -
+      //       (cpu__decode__flag_op1_base_op0_0);
+      //   inner_sum += random_coefficients[3] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/decode/flag_res_op1_bit:
+      //   const FieldElementT constraint =
+      //       ((cpu__decode__flag_res_op1_0) * (cpu__decode__flag_res_op1_0)) -
+      //       (cpu__decode__flag_res_op1_0);
+      //   inner_sum += random_coefficients[4] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/decode/flag_pc_update_regular_bit:
+      //   const FieldElementT constraint =
+      //       ((cpu__decode__flag_pc_update_regular_0) * (cpu__decode__flag_pc_update_regular_0)) -
+      //       (cpu__decode__flag_pc_update_regular_0);
+      //   inner_sum += random_coefficients[5] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/decode/fp_update_regular_bit:
+      //   const FieldElementT constraint =
+      //       ((cpu__decode__fp_update_regular_0) * (cpu__decode__fp_update_regular_0)) -
+      //       (cpu__decode__fp_update_regular_0);
+      //   inner_sum += random_coefficients[6] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/operands/mem_dst_addr:
+      //   const FieldElementT constraint =
+      //       ((column3_row8) + (half_offset_size_)) -
+      //       ((((cpu__decode__opcode_rc__bit_0) * (column5_row8)) +
+      //         (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_0)) * (column5_row0))) +
+      //        (column0_row0));
+      //   inner_sum += random_coefficients[7] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/operands/mem0_addr:
+      //   const FieldElementT constraint =
+      //       ((column3_row4) + (half_offset_size_)) -
+      //       ((((cpu__decode__opcode_rc__bit_1) * (column5_row8)) +
+      //         (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_1)) * (column5_row0))) +
+      //        (column0_row8));
+      //   inner_sum += random_coefficients[8] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/operands/mem1_addr:
+      //   const FieldElementT constraint = ((column3_row12) + (half_offset_size_)) -
+      //                                    ((((((cpu__decode__opcode_rc__bit_2) * (column3_row0)) +
+      //                                        ((cpu__decode__opcode_rc__bit_4) * (column5_row0))) +
+      //                                       ((cpu__decode__opcode_rc__bit_3) * (column5_row8))) +
+      //                                      ((cpu__decode__flag_op1_base_op0_0) * (column3_row5))) +
+      //                                     (column0_row4));
+      //   inner_sum += random_coefficients[9] * constraint;
+      // }
       {
         // Constraint expression for cpu/operands/ops_mul:
+        // std::array<std::byte, 32> vec1 {};
+        // gsl::span<std::byte> span_out1 = gsl::make_span(vec1);
+        // column5_row4.ToBytes(span_out1);
+        // printf("column5_row4: ");
+        // for (std::size_t l = 0; l < span_out1.length(); l++) {
+        //     auto v = span_out1.at(l);
+        //     printf("%hhu ", v);
+        // }
+        // printf("\n");
+
+        // std::array<std::byte, 32> vec2 {};
+        // gsl::span<std::byte> span_out2 = gsl::make_span(vec2);
+        // column3_row5.ToBytes(span_out2);
+        // printf("column3_row5: ");
+        // for (std::size_t l = 0; l < span_out2.length(); l++) {
+        //     auto v = span_out2.at(l);
+        //     printf("%hhu ", v);
+        // }
+        // printf("\n");
+
+        // std::array<std::byte, 32> vec3 {};
+        // gsl::span<std::byte> span_out3 = gsl::make_span(vec3);
+        // column3_row13.ToBytes(span_out3);
+        // printf("column3_row13: ");
+        // for (std::size_t l = 0; l < span_out3.length(); l++) {
+        //     auto v = span_out3.at(l);
+        //     printf("%hhu ", v);
+        // }
+        // printf("\n");
+
         const FieldElementT constraint = (column5_row4) - ((column3_row5) * (column3_row13));
-        inner_sum += random_coefficients[10] * constraint;
+        inner_sum += random_coefficients[0] * constraint;
+
+        // std::array<std::byte, 32> vec1 {};
+        // gsl::span<std::byte> span_out1 = gsl::make_span(vec1);
+        // constraint.ToBytes(span_out1);
+        // printf("constraint: ");
+        // for (std::size_t l = 0; l < span_out1.length(); l++) {
+        //     auto v = span_out1.at(l);
+        //     printf("%hhu ", v);
+        // }
+        // printf("\n");
+
+        // std::array<std::byte, 32> vec2 {};
+        // gsl::span<std::byte> span_out2 = gsl::make_span(vec2);
+        // random_coefficients[0].ToBytes(span_out2);
+        // printf("random_coefficients[0]: ");
+        // for (std::size_t l = 0; l < span_out2.length(); l++) {
+        //     auto v = span_out2.at(l);
+        //     printf("%hhu ", v);
+        // }
+        // printf("\n");
       }
-      {
-        // Constraint expression for cpu/operands/res:
-        const FieldElementT constraint =
-            (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_9)) * (column5_row12)) -
-            ((((cpu__decode__opcode_rc__bit_5) * ((column3_row5) + (column3_row13))) +
-              ((cpu__decode__opcode_rc__bit_6) * (column5_row4))) +
-             ((cpu__decode__flag_res_op1_0) * (column3_row13)));
-        inner_sum += random_coefficients[11] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/call/push_fp:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_12) * ((column3_row9) - (column5_row8));
-        inner_sum += random_coefficients[18] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/call/push_pc:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_12) *
-            ((column3_row5) -
-             (((column3_row0) + (cpu__decode__opcode_rc__bit_2)) + (FieldElementT::One())));
-        inner_sum += random_coefficients[19] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/call/off0:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_12) * ((column0_row0) - (half_offset_size_));
-        inner_sum += random_coefficients[20] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/call/off1:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_12) *
-            ((column0_row8) - ((half_offset_size_) + (FieldElementT::One())));
-        inner_sum += random_coefficients[21] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/call/flags:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_12) *
-            (((((cpu__decode__opcode_rc__bit_12) + (cpu__decode__opcode_rc__bit_12)) +
-               (FieldElementT::One())) +
-              (FieldElementT::One())) -
-             (((cpu__decode__opcode_rc__bit_0) + (cpu__decode__opcode_rc__bit_1)) +
-              (FieldElementT::ConstexprFromBigInt(0x4_Z))));
-        inner_sum += random_coefficients[22] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/ret/off0:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_13) *
-            (((column0_row0) + (FieldElementT::ConstexprFromBigInt(0x2_Z))) - (half_offset_size_));
-        inner_sum += random_coefficients[23] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/ret/off2:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_13) *
-            (((column0_row4) + (FieldElementT::One())) - (half_offset_size_));
-        inner_sum += random_coefficients[24] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/ret/flags:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_13) *
-            (((((cpu__decode__opcode_rc__bit_7) + (cpu__decode__opcode_rc__bit_0)) +
-               (cpu__decode__opcode_rc__bit_3)) +
-              (cpu__decode__flag_res_op1_0)) -
-             (FieldElementT::ConstexprFromBigInt(0x4_Z)));
-        inner_sum += random_coefficients[25] * constraint;
-      }
-      {
-        // Constraint expression for cpu/opcodes/assert_eq/assert_eq:
-        const FieldElementT constraint =
-            (cpu__decode__opcode_rc__bit_14) * ((column3_row9) - (column5_row12));
-        inner_sum += random_coefficients[26] * constraint;
-      }
+      // {
+      //   // Constraint expression for cpu/operands/res:
+      //   const FieldElementT constraint =
+      //       (((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_9)) * (column5_row12)) -
+      //       ((((cpu__decode__opcode_rc__bit_5) * ((column3_row5) + (column3_row13))) +
+      //         ((cpu__decode__opcode_rc__bit_6) * (column5_row4))) +
+      //        ((cpu__decode__flag_res_op1_0) * (column3_row13)));
+      //   inner_sum += random_coefficients[11] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/call/push_fp:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_12) * ((column3_row9) - (column5_row8));
+      //   inner_sum += random_coefficients[18] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/call/push_pc:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_12) *
+      //       ((column3_row5) -
+      //        (((column3_row0) + (cpu__decode__opcode_rc__bit_2)) + (FieldElementT::One())));
+      //   inner_sum += random_coefficients[19] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/call/off0:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_12) * ((column0_row0) - (half_offset_size_));
+      //   inner_sum += random_coefficients[20] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/call/off1:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_12) *
+      //       ((column0_row8) - ((half_offset_size_) + (FieldElementT::One())));
+      //   inner_sum += random_coefficients[21] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/call/flags:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_12) *
+      //       (((((cpu__decode__opcode_rc__bit_12) + (cpu__decode__opcode_rc__bit_12)) +
+      //          (FieldElementT::One())) +
+      //         (FieldElementT::One())) -
+      //        (((cpu__decode__opcode_rc__bit_0) + (cpu__decode__opcode_rc__bit_1)) +
+      //         (FieldElementT::ConstexprFromBigInt(0x4_Z))));
+      //   inner_sum += random_coefficients[22] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/ret/off0:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_13) *
+      //       (((column0_row0) + (FieldElementT::ConstexprFromBigInt(0x2_Z))) - (half_offset_size_));
+      //   inner_sum += random_coefficients[23] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/ret/off2:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_13) *
+      //       (((column0_row4) + (FieldElementT::One())) - (half_offset_size_));
+      //   inner_sum += random_coefficients[24] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/ret/flags:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_13) *
+      //       (((((cpu__decode__opcode_rc__bit_7) + (cpu__decode__opcode_rc__bit_0)) +
+      //          (cpu__decode__opcode_rc__bit_3)) +
+      //         (cpu__decode__flag_res_op1_0)) -
+      //        (FieldElementT::ConstexprFromBigInt(0x4_Z)));
+      //   inner_sum += random_coefficients[25] * constraint;
+      // }
+      // {
+      //   // Constraint expression for cpu/opcodes/assert_eq/assert_eq:
+      //   const FieldElementT constraint =
+      //       (cpu__decode__opcode_rc__bit_14) * ((column3_row9) - (column5_row12));
+      //   inner_sum += random_coefficients[26] * constraint;
+      // }
       outer_sum += inner_sum;  // domain == FieldElementT::One()
     }
 
-    {
-      // Compute a sum of constraints with numerator = domain6.
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for cpu/update_registers/update_pc/tmp0:
-        const FieldElementT constraint =
-            (column5_row2) - ((cpu__decode__opcode_rc__bit_9) * (column3_row9));
-        inner_sum += random_coefficients[12] * constraint;
-      }
-      {
-        // Constraint expression for cpu/update_registers/update_pc/tmp1:
-        const FieldElementT constraint = (column5_row10) - ((column5_row2) * (column5_row12));
-        inner_sum += random_coefficients[13] * constraint;
-      }
-      {
-        // Constraint expression for cpu/update_registers/update_pc/pc_cond_negative:
-        const FieldElementT constraint =
-            ((((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_9)) * (column3_row16)) +
-             ((column5_row2) * ((column3_row16) - ((column3_row0) + (column3_row13))))) -
-            ((((cpu__decode__flag_pc_update_regular_0) * (npc_reg_0)) +
-              ((cpu__decode__opcode_rc__bit_7) * (column5_row12))) +
-             ((cpu__decode__opcode_rc__bit_8) * ((column3_row0) + (column5_row12))));
-        inner_sum += random_coefficients[14] * constraint;
-      }
-      {
-        // Constraint expression for cpu/update_registers/update_pc/pc_cond_positive:
-        const FieldElementT constraint =
-            ((column5_row10) - (cpu__decode__opcode_rc__bit_9)) * ((column3_row16) - (npc_reg_0));
-        inner_sum += random_coefficients[15] * constraint;
-      }
-      {
-        // Constraint expression for cpu/update_registers/update_ap/ap_update:
-        const FieldElementT constraint =
-            (column5_row16) -
-            ((((column5_row0) + ((cpu__decode__opcode_rc__bit_10) * (column5_row12))) +
-              (cpu__decode__opcode_rc__bit_11)) +
-             ((cpu__decode__opcode_rc__bit_12) * (FieldElementT::ConstexprFromBigInt(0x2_Z))));
-        inner_sum += random_coefficients[16] * constraint;
-      }
-      {
-        // Constraint expression for cpu/update_registers/update_fp/fp_update:
-        const FieldElementT constraint =
-            (column5_row24) - ((((cpu__decode__fp_update_regular_0) * (column5_row8)) +
-                                ((cpu__decode__opcode_rc__bit_13) * (column3_row9))) +
-                               ((cpu__decode__opcode_rc__bit_12) *
-                                ((column5_row0) + (FieldElementT::ConstexprFromBigInt(0x2_Z)))));
-        inner_sum += random_coefficients[17] * constraint;
-      }
-      outer_sum += inner_sum * domain6;
-    }
+  //   {
+  //     // Compute a sum of constraints with numerator = domain6.
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_pc/tmp0:
+  //       const FieldElementT constraint =
+  //           (column5_row2) - ((cpu__decode__opcode_rc__bit_9) * (column3_row9));
+  //       inner_sum += random_coefficients[12] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_pc/tmp1:
+  //       const FieldElementT constraint = (column5_row10) - ((column5_row2) * (column5_row12));
+  //       inner_sum += random_coefficients[13] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_pc/pc_cond_negative:
+  //       const FieldElementT constraint =
+  //           ((((FieldElementT::One()) - (cpu__decode__opcode_rc__bit_9)) * (column3_row16)) +
+  //            ((column5_row2) * ((column3_row16) - ((column3_row0) + (column3_row13))))) -
+  //           ((((cpu__decode__flag_pc_update_regular_0) * (npc_reg_0)) +
+  //             ((cpu__decode__opcode_rc__bit_7) * (column5_row12))) +
+  //            ((cpu__decode__opcode_rc__bit_8) * ((column3_row0) + (column5_row12))));
+  //       inner_sum += random_coefficients[14] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_pc/pc_cond_positive:
+  //       const FieldElementT constraint =
+  //           ((column5_row10) - (cpu__decode__opcode_rc__bit_9)) * ((column3_row16) - (npc_reg_0));
+  //       inner_sum += random_coefficients[15] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_ap/ap_update:
+  //       const FieldElementT constraint =
+  //           (column5_row16) -
+  //           ((((column5_row0) + ((cpu__decode__opcode_rc__bit_10) * (column5_row12))) +
+  //             (cpu__decode__opcode_rc__bit_11)) +
+  //            ((cpu__decode__opcode_rc__bit_12) * (FieldElementT::ConstexprFromBigInt(0x2_Z))));
+  //       inner_sum += random_coefficients[16] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for cpu/update_registers/update_fp/fp_update:
+  //       const FieldElementT constraint =
+  //           (column5_row24) - ((((cpu__decode__fp_update_regular_0) * (column5_row8)) +
+  //                               ((cpu__decode__opcode_rc__bit_13) * (column3_row9))) +
+  //                              ((cpu__decode__opcode_rc__bit_12) *
+  //                               ((column5_row0) + (FieldElementT::ConstexprFromBigInt(0x2_Z)))));
+  //       inner_sum += random_coefficients[17] * constraint;
+  //     }
+  //     outer_sum += inner_sum * domain6;
+  //   }
     res += FractionFieldElement<FieldElementT>(outer_sum, domain4);
   }
 
-  {
-    // Compute a sum of constraints with denominator = domain7.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain7.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for initial_ap:
-        const FieldElementT constraint = (column5_row0) - (initial_ap_);
-        inner_sum += random_coefficients[27] * constraint;
-      }
-      {
-        // Constraint expression for initial_fp:
-        const FieldElementT constraint = (column5_row8) - (initial_ap_);
-        inner_sum += random_coefficients[28] * constraint;
-      }
-      {
-        // Constraint expression for initial_pc:
-        const FieldElementT constraint = (column3_row0) - (initial_pc_);
-        inner_sum += random_coefficients[29] * constraint;
-      }
-      {
-        // Constraint expression for memory/multi_column_perm/perm/init0:
-        const FieldElementT constraint =
-            (((((memory__multi_column_perm__perm__interaction_elm_) -
-                ((column4_row0) +
-                 ((memory__multi_column_perm__hash_interaction_elm0_) * (column4_row1)))) *
-               (column7_inter1_row0)) +
-              (column3_row0)) +
-             ((memory__multi_column_perm__hash_interaction_elm0_) * (column3_row1))) -
-            (memory__multi_column_perm__perm__interaction_elm_);
-        inner_sum += random_coefficients[33] * constraint;
-      }
-      {
-        // Constraint expression for memory/initial_addr:
-        const FieldElementT constraint = (column4_row0) - (FieldElementT::One());
-        inner_sum += random_coefficients[38] * constraint;
-      }
-      {
-        // Constraint expression for rc16/perm/init0:
-        const FieldElementT constraint =
-            ((((rc16__perm__interaction_elm_) - (column2_row0)) * (column6_inter1_row0)) +
-             (column0_row0)) -
-            (rc16__perm__interaction_elm_);
-        inner_sum += random_coefficients[41] * constraint;
-      }
-      {
-        // Constraint expression for rc16/minimum:
-        const FieldElementT constraint = (column2_row0) - (rc_min_);
-        inner_sum += random_coefficients[45] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain7);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for initial_ap:
+  //       const FieldElementT constraint = (column5_row0) - (initial_ap_);
+  //       inner_sum += random_coefficients[27] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for initial_fp:
+  //       const FieldElementT constraint = (column5_row8) - (initial_ap_);
+  //       inner_sum += random_coefficients[28] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for initial_pc:
+  //       const FieldElementT constraint = (column3_row0) - (initial_pc_);
+  //       inner_sum += random_coefficients[29] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for memory/multi_column_perm/perm/init0:
+  //       const FieldElementT constraint =
+  //           (((((memory__multi_column_perm__perm__interaction_elm_) -
+  //               ((column4_row0) +
+  //                ((memory__multi_column_perm__hash_interaction_elm0_) * (column4_row1)))) *
+  //              (column7_inter1_row0)) +
+  //             (column3_row0)) +
+  //            ((memory__multi_column_perm__hash_interaction_elm0_) * (column3_row1))) -
+  //           (memory__multi_column_perm__perm__interaction_elm_);
+  //       inner_sum += random_coefficients[33] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for memory/initial_addr:
+  //       const FieldElementT constraint = (column4_row0) - (FieldElementT::One());
+  //       inner_sum += random_coefficients[38] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for rc16/perm/init0:
+  //       const FieldElementT constraint =
+  //           ((((rc16__perm__interaction_elm_) - (column2_row0)) * (column6_inter1_row0)) +
+  //            (column0_row0)) -
+  //           (rc16__perm__interaction_elm_);
+  //       inner_sum += random_coefficients[41] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for rc16/minimum:
+  //       const FieldElementT constraint = (column2_row0) - (rc_min_);
+  //       inner_sum += random_coefficients[45] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain7);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain6.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain6.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for final_ap:
-        const FieldElementT constraint = (column5_row0) - (final_ap_);
-        inner_sum += random_coefficients[30] * constraint;
-      }
-      {
-        // Constraint expression for final_fp:
-        const FieldElementT constraint = (column5_row8) - (initial_ap_);
-        inner_sum += random_coefficients[31] * constraint;
-      }
-      {
-        // Constraint expression for final_pc:
-        const FieldElementT constraint = (column3_row0) - (final_pc_);
-        inner_sum += random_coefficients[32] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain6);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for final_ap:
+  //       const FieldElementT constraint = (column5_row0) - (final_ap_);
+  //       inner_sum += random_coefficients[30] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for final_fp:
+  //       const FieldElementT constraint = (column5_row8) - (initial_ap_);
+  //       inner_sum += random_coefficients[31] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for final_pc:
+  //       const FieldElementT constraint = (column3_row0) - (final_pc_);
+  //       inner_sum += random_coefficients[32] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain6);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain1.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain1.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = domain8.
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for memory/multi_column_perm/perm/step0:
-        const FieldElementT constraint =
-            (((memory__multi_column_perm__perm__interaction_elm_) -
-              ((column4_row2) +
-               ((memory__multi_column_perm__hash_interaction_elm0_) * (column4_row3)))) *
-             (column7_inter1_row2)) -
-            (((memory__multi_column_perm__perm__interaction_elm_) -
-              ((column3_row2) +
-               ((memory__multi_column_perm__hash_interaction_elm0_) * (column3_row3)))) *
-             (column7_inter1_row0));
-        inner_sum += random_coefficients[34] * constraint;
-      }
-      {
-        // Constraint expression for memory/diff_is_bit:
-        const FieldElementT constraint =
-            ((memory__address_diff_0) * (memory__address_diff_0)) - (memory__address_diff_0);
-        inner_sum += random_coefficients[36] * constraint;
-      }
-      {
-        // Constraint expression for memory/is_func:
-        const FieldElementT constraint =
-            ((memory__address_diff_0) - (FieldElementT::One())) * ((column4_row1) - (column4_row3));
-        inner_sum += random_coefficients[37] * constraint;
-      }
-      outer_sum += inner_sum * domain8;
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain1);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = domain8.
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for memory/multi_column_perm/perm/step0:
+  //       const FieldElementT constraint =
+  //           (((memory__multi_column_perm__perm__interaction_elm_) -
+  //             ((column4_row2) +
+  //              ((memory__multi_column_perm__hash_interaction_elm0_) * (column4_row3)))) *
+  //            (column7_inter1_row2)) -
+  //           (((memory__multi_column_perm__perm__interaction_elm_) -
+  //             ((column3_row2) +
+  //              ((memory__multi_column_perm__hash_interaction_elm0_) * (column3_row3)))) *
+  //            (column7_inter1_row0));
+  //       inner_sum += random_coefficients[34] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for memory/diff_is_bit:
+  //       const FieldElementT constraint =
+  //           ((memory__address_diff_0) * (memory__address_diff_0)) - (memory__address_diff_0);
+  //       inner_sum += random_coefficients[36] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for memory/is_func:
+  //       const FieldElementT constraint =
+  //           ((memory__address_diff_0) - (FieldElementT::One())) * ((column4_row1) - (column4_row3));
+  //       inner_sum += random_coefficients[37] * constraint;
+  //     }
+  //     outer_sum += inner_sum * domain8;
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain1);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain8.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain8.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for memory/multi_column_perm/perm/last:
-        const FieldElementT constraint =
-            (column7_inter1_row0) - (memory__multi_column_perm__perm__public_memory_prod_);
-        inner_sum += random_coefficients[35] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain8);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for memory/multi_column_perm/perm/last:
+  //       const FieldElementT constraint =
+  //           (column7_inter1_row0) - (memory__multi_column_perm__perm__public_memory_prod_);
+  //       inner_sum += random_coefficients[35] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain8);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain2.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain2.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for public_memory_addr_zero:
-        const FieldElementT constraint = column3_row2;
-        inner_sum += random_coefficients[39] * constraint;
-      }
-      {
-        // Constraint expression for public_memory_value_zero:
-        const FieldElementT constraint = column3_row3;
-        inner_sum += random_coefficients[40] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain2);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for public_memory_addr_zero:
+  //       const FieldElementT constraint = column3_row2;
+  //       inner_sum += random_coefficients[39] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for public_memory_value_zero:
+  //       const FieldElementT constraint = column3_row3;
+  //       inner_sum += random_coefficients[40] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain2);
+  // }
 
-  {
-    // Compute a sum of constraints with denominator = domain5.
-    FieldElementT outer_sum = FieldElementT::Zero();
+  // {
+  //   // Compute a sum of constraints with denominator = domain5.
+  //   FieldElementT outer_sum = FieldElementT::Zero();
 
-    {
-      // Compute a sum of constraints with numerator = FieldElementT::One().
-      FieldElementT inner_sum = FieldElementT::Zero();
-      {
-        // Constraint expression for rc16/perm/last:
-        const FieldElementT constraint = (column6_inter1_row0) - (rc16__perm__public_memory_prod_);
-        inner_sum += random_coefficients[43] * constraint;
-      }
-      {
-        // Constraint expression for rc16/maximum:
-        const FieldElementT constraint = (column2_row0) - (rc_max_);
-        inner_sum += random_coefficients[46] * constraint;
-      }
-      outer_sum += inner_sum;  // domain == FieldElementT::One()
-    }
-    res += FractionFieldElement<FieldElementT>(outer_sum, domain5);
-  }
+  //   {
+  //     // Compute a sum of constraints with numerator = FieldElementT::One().
+  //     FieldElementT inner_sum = FieldElementT::Zero();
+  //     {
+  //       // Constraint expression for rc16/perm/last:
+  //       const FieldElementT constraint = (column6_inter1_row0) - (rc16__perm__public_memory_prod_);
+  //       inner_sum += random_coefficients[43] * constraint;
+  //     }
+  //     {
+  //       // Constraint expression for rc16/maximum:
+  //       const FieldElementT constraint = (column2_row0) - (rc_max_);
+  //       inner_sum += random_coefficients[46] * constraint;
+  //     }
+  //     outer_sum += inner_sum;  // domain == FieldElementT::One()
+  //   }
+  //   res += FractionFieldElement<FieldElementT>(outer_sum, domain5);
+  // }
   return res;
 }
 

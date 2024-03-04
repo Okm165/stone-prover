@@ -66,6 +66,7 @@ void MerkleCommitmentSchemeProver<HashT>::Commit() {
   // log2(n_elements_in_segment_)) far from the root - were already computed.
   size_t tree_height = SafeLog2(tree_.k_data_length);
   const HashT commitment = tree_.GetRoot(tree_height - SafeLog2(SegmentLengthInElements()));
+  printf("%s \n", commitment.ToString().c_str());
   channel_->SendCommitmentHash(commitment, "Commitment");
 }
 

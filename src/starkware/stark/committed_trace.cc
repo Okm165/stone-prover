@@ -60,11 +60,29 @@ void CommittedTraceProver::Commit(Trace&& trace, const FftBases& trace_domain, b
 
   ASSERT_RELEASE(trace.Width() == n_columns_, "Wrong number of columns");
 
+  // printf("%lu\n", trace.Width());
+  // printf("%lu\n", trace.Length());
+
   lde_ = CreateLdeManager(cached_lde_config_, trace_domain, *evaluation_domain_);
   {
     ProfilingBlock interpolation_block("Interpolation");
     auto columns = std::move(trace).ConsumeAsColumnsVector();
+    // printf("%lu\n", columns.size());
     for (auto&& column : columns) {
+      // for (std::size_t i = 0; i < column.Size(); i++) {
+      //   auto val = column.At(i);
+      //   std::array<std::byte, 32> vec {};
+      //   gsl::span<std::byte> span_out = gsl::make_span(vec);
+      //   val.ToBytes(span_out);
+      //   for (std::size_t l = 0; l < span_out.length(); l++) {
+      //     auto v = span_out.at(l);
+      //     printf("%hhu ", v);
+      //   }
+      //   printf("\n");
+      // }
+      // printf("\n");
+      // printf("\n");
+
       if (bit_reverse) {
         BitReverseInPlace(column);
       }
@@ -83,6 +101,24 @@ void CommittedTraceProver::Commit(Trace&& trace, const FftBases& trace_domain, b
     lde_block.CloseBlock();
     // Commit to the LDE.
     ProfilingBlock commit_to_lde_block("Commit to LDE");
+
+    // std::vector<starkware::ConstFieldElementSpan> evals(lde_evaluations->begin(), lde_evaluations->end());
+    // for (std::size_t i = 0; i < evals.size(); i++) {
+    //   auto column = evals.at(i);
+    //   for (std::size_t l = 0; l < column.Size(); l++) {
+    //     auto v = column[l];
+    //     std::array<std::byte, 32> vec {};
+    //     gsl::span<std::byte> span_out = gsl::make_span(vec);
+    //     v.ToBytes(span_out);
+    //     for (std::size_t k = 0; k < span_out.length(); k++) {
+    //       auto z = span_out.at(k);
+    //       printf("%hhu ", z);
+    //     }
+    //     printf("\n");
+    //   }
+    //   printf("\n");
+    // }
+
     table_prover_->AddSegmentForCommitment(
         {lde_evaluations->begin(), lde_evaluations->end()}, coset_index);
     commit_to_lde_block.CloseBlock();

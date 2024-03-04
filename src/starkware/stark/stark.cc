@@ -49,9 +49,31 @@ std::unique_ptr<CompositionPolynomial> CreateCompositionPolynomial(
   FieldElementVector random_coefficients = FieldElementVector::Make(field);
   FieldElement alpha =
       channel->GetRandomFieldElementFromVerifier(field, "Constraint polynomial random element");
+
+  // std::array<std::byte, 32> vec {};
+  // gsl::span<std::byte> span_out = gsl::make_span(vec);
+  // alpha.ToBytes(span_out);
+  // printf("alpha: ");
+  // for (std::size_t l = 0; l < span_out.length(); l++) {
+  //   auto v = span_out.at(l);
+  //   printf("%hhu ", v);
+  // }
+  // printf("\n");
+
   FieldElement curr = field.One();
   for (size_t i = 0; i < num_random_coefficients_required; ++i) {
     random_coefficients.PushBack(curr);
+
+    // std::array<std::byte, 32> vec {};
+    // gsl::span<std::byte> span_out = gsl::make_span(vec);
+    // curr.ToBytes(span_out);
+    // printf("curr: ");
+    // for (std::size_t l = 0; l < span_out.length(); l++) {
+    //   auto v = span_out.at(l);
+    //   printf("%hhu ", v);
+    // }
+    // printf("\n");
+
     curr = curr * alpha;
   }
   return air.CreateCompositionPolynomial(trace_generator, random_coefficients);
@@ -327,12 +349,29 @@ CompositionOracleProver StarkProver::OutOfDomainSamplingProve(
   auto composition_eval = original_oracle.EvalComposition(config_->constraint_polynomial_task_size);
   composition_block.CloseBlock();
 
+  for (std::size_t l = 0; l < composition_eval.Size(); l++) {
+    auto v = composition_eval.At(l);
+    std::array<std::byte, 32> vec {};
+    gsl::span<std::byte> span_out = gsl::make_span(vec);
+    v.ToBytes(span_out);
+    printf("composition_eval: ");
+    for (std::size_t k = 0; k < span_out.length(); k++) {
+      auto z = span_out.at(k);
+      printf("%hhu ", z);
+    }
+    printf("\n");
+  }
+  
+  printf("n_breaks: %d ", n_breaks);
+
   ProfilingBlock breaker_block("Polynomial breaker");
   // Break to evaluations of n_broken_columns polynomials on a single coset.
   // NOLINTNEXTLINE.
   auto [broken_uncommitted_trace, broken_bases] = oods::BreakCompositionPolynomial(
       composition_eval, n_breaks, *params_->composition_eval_bases);
   breaker_block.CloseBlock();
+
+  // printf("basis_size: %d", params_->evaluation_domain.Bases().At(0).BasisSize());
 
   // The resulting evaluations are on a domain which may have a different offset than the trace.
   // broken_bases represents that domain. It should have the same basis, but a different offset
@@ -342,6 +381,7 @@ CompositionOracleProver StarkProver::OutOfDomainSamplingProve(
       "Trace and Broken bases do no match");
 
   // Lde and Commit on Broken.
+  printf("Lde and Commit on Broken.\n");
   auto broken_trace = CommitOnTrace(
       std::move(broken_uncommitted_trace), *broken_bases, false, "Commit on composition");
   auto boundary_conditions =
@@ -388,6 +428,8 @@ void StarkProver::ProveStark(std::unique_ptr<TraceContext> trace_context) {
 
   const size_t trace_length = trace.Length();
   const size_t first_trace_width = trace.Width();
+  // printf("%lu\n", trace.Width());
+  // printf("%lu\n", trace.Length());
   ValidateFirstTraceSize(trace_length, first_trace_width);
 
   AnnotationScope scope(channel_.get(), "STARK");
@@ -395,6 +437,7 @@ void StarkProver::ProveStark(std::unique_ptr<TraceContext> trace_context) {
   std::vector<MaybeOwnedPtr<CommittedTraceProverBase>> traces;
   // Add first committed trace.
   {
+    printf("Commit on original main\n");
     AnnotationScope scope(channel_.get(), "Original");
     CommittedTraceProver committed_trace(CommitOnTrace(
         std::move(trace), params_->evaluation_domain.Bases(), true, "Commit on trace"));
@@ -427,6 +470,7 @@ void StarkProver::ProveStark(std::unique_ptr<TraceContext> trace_context) {
             << std::endl;
 
     // Add interaction committed trace.
+    printf("Commit on interaction main\n");
     CommittedTraceProver committed_interaction_trace(CommitOnTrace(
         std::move(interaction_trace), params_->evaluation_domain.Bases(), true,
         "Commit on interaction trace"));

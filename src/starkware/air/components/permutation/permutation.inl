@@ -13,6 +13,7 @@
 // and limitations under the License.
 
 #include "third_party/gsl/gsl-lite.hpp"
+#include "stdio.h"
 
 namespace starkware {
 
@@ -61,12 +62,31 @@ void PermutationComponent<FieldElementT>::WriteInteractionTrace(
       FieldElementT::UninitializedVector(shifted_perm.size());
   BatchInverse<FieldElementT>(shifted_perm, shifted_perm_inverse);
 
+  // std::array<std::byte, 32> vec {};
+  // gsl::span<std::byte> span_out = gsl::make_span(vec);
+  // interaction_elm.ToBytes(span_out);
+  // printf("interaction_elm: ");
+  // for (std::size_t k = 0; k < span_out.length(); k++) {
+  //   auto z = span_out.at(k);
+  //   printf("%hhu ", z);
+  // }
+  // printf("\n");
+
   // Value in cell i+1 of interaction column cumprod is
   // cumprod[i]*(interaction_elm - original[i]) / (interaction_elm - perm[i]).
   auto val = FieldElementT::One();
   size_t perm_offset = 0;
   for (size_t series_i = 0; series_i < n_series_; ++series_i) {
     for (size_t i = 0; i < perms[series_i].size(); ++i, ++perm_offset) {
+      // std::array<std::byte, 32> vec {};
+      // gsl::span<std::byte> span_out = gsl::make_span(vec);
+      // shifted_perm_inverse[perm_offset].ToBytes(span_out);
+      // printf("d: ");
+      // for (std::size_t k = 0; k < span_out.length(); k++) {
+      //   auto z = span_out.at(k);
+      //   printf("%hhu ", z);
+      // }
+      // printf("\n");
       val *= shifted_perm_inverse[perm_offset] * (interaction_elm - origs[series_i][i]);
       cum_prod_cols_[series_i].SetCell(interaction_trace, i, val);
     }

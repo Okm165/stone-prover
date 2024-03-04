@@ -73,6 +73,40 @@ ListOfCosets ListOfCosets::MakeListOfCosets(
     trace_generator = Pow(coset_generator, power_of_two_cosets);
     offset = FieldElementT::One();
 
+    std::array<std::byte, 32> vec {};
+    gsl::span<std::byte> span_out = gsl::make_span(vec);
+    coset_generator.ToBytes(span_out);
+    printf("coset_generator: ");
+    for (std::size_t l = 0; l < span_out.length(); l++) {
+      auto v = span_out.at(l);
+      printf("%hhu ", v);
+    }
+    printf("\n");
+
+    std::array<std::byte, 32> vec1 {};
+    gsl::span<std::byte> span_out1 = gsl::make_span(vec1);
+    trace_generator.ToBytes(span_out1);
+    printf("trace_generator: ");
+    for (std::size_t l = 0; l < span_out1.length(); l++) {
+      auto v = span_out1.at(l);
+      printf("%hhu ", v);
+    }
+    printf("\n");
+
+    std::array<std::byte, 32> vec2 {};
+    gsl::span<std::byte> span_out2 = gsl::make_span(vec2);
+    FieldElementT::GetBaseGenerator().ToBytes(span_out2);
+    printf("GetBaseGenerator: ");
+    for (std::size_t l = 0; l < span_out2.length(); l++) {
+      auto v = span_out2.at(l);
+      printf("%hhu ", v);
+    }
+    printf("\n");
+
+    printf("coset_generator: %s", coset_generator.ToString().c_str());
+    printf("trace_generator: %s", trace_generator.ToString().c_str());
+    printf("GetBaseGenerator: %s", FieldElementT::GetBaseGenerator().ToString().c_str());
+
     if (order == MultiplicativeGroupOrdering::kNaturalOrder) {
       MultiplicativeFftBases<FieldElementT, MultiplicativeGroupOrdering::kNaturalOrder> bases(
           trace_generator, log_size, offset);

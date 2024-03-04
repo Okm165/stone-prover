@@ -1,0 +1,316 @@
+{
+	"annotations" : 
+	[
+		"title cpu air Proof Protocol",
+		"",
+		"P->V[0:32]: /cpu air/STARK/Original/Commit on Trace: Commitment: Hash(0x25fbf558458959c672b5ac89659e9d8b3affee6a2effc91d44b21afdfc20424e)",
+		"V->P: /cpu air/STARK/Interaction: Interaction element #0: Field Element(0x629977e673af5658352b9e8600d30e595536913a9b37424d6e99698ee212d)",
+		"V->P: /cpu air/STARK/Interaction: Interaction element #1: Field Element(0x5a768a817db066c4e4d2f5cf01ef441c5543183314cbfb5945946181463d70b)",
+		"V->P: /cpu air/STARK/Interaction: Interaction element #2: Field Element(0x34d493981f858b958f22815857af4a2b2b1f0ed3f0c9dd80f78f9faf414b44a)",
+		"P->V[32:64]: /cpu air/STARK/Interaction/Commit on Trace: Commitment: Hash(0x28ad0bf228eb5490bccc062fe7cdb721ccd9714345d9018f0a2854a31243b72)",
+		"V->P: /cpu air/STARK/Original: Constraint polynomial random element: Field Element(0x781d9283e0d237368a1ed10177a8a11b43c6d5c1e1b4c67e1aa1760f98fd857)",
+		"P->V[64:96]: /cpu air/STARK/Out Of Domain Sampling/Commit on Trace: Commitment: Hash(0x14446dc45a045db7a2800bdde0512c81280bcbadc51346870e7f5bc5d50eda15)",
+		"V->P: /cpu air/STARK/Out Of Domain Sampling/OODS values: Evaluation point: Field Element(0x1f5ede1dfd39f8aff1f15c9f647fe1518417bd2efe158445eb276d9eae48f69)",
+		"P->V[96:128]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 0: Field Element(0x337490131543cbec6cf46f5c35e1bb554ef959afdf9d7f4c1d349c59a0757ef)",
+		"P->V[128:160]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 1: Field Element(0x3dc6e574e024857d43fc3af838abf6317c23fb63718b69f23c92ed6b8ee3a72)",
+		"P->V[160:192]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 2: Field Element(0x7a3a92e57067bc891cbf93ddcbec4507e1c046fdc276c40160f31d946e39bfb)",
+		"P->V[192:224]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 3: Field Element(0x895213921f48060068ea2cdf66a1213853d950686c2b1dbf8b734757153bc7)",
+		"P->V[224:256]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 4: Field Element(0x1314f82afd40abed89a67475193e081a512d7f1b3168e397213dcf385716da8)",
+		"P->V[256:288]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 5: Field Element(0x77a0864ad7c9da14543ce87f820477671753478e8325b2d2c430d2548c0feb8)",
+		"P->V[288:320]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 6: Field Element(0x431395e96a35025412754c4818611e2c4065b500a7309af09b5f6890c377e9a)",
+		"P->V[320:352]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 7: Field Element(0x32c8816735b1c144f9425262e092b12a027242dd26f73bd954a70036c2392d0)",
+		"P->V[352:384]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 8: Field Element(0x77ac195d3c0944108275c89659234a3834243260e085068bc23937ed6f04d7f)",
+		"P->V[384:416]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 9: Field Element(0x268bee82bfc1bbf41669ed98bf29395e6baab852af348d97e7e3b8041bf1847)",
+		"P->V[416:448]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 10: Field Element(0x38bfc91b6b5758d803831320832f7a615aee34043f46145450151de709934cf)",
+		"P->V[448:480]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 11: Field Element(0x3571b00bede22482e8c8de02b4a0000f4ac795cc17676df706486c54634f96a)",
+		"P->V[480:512]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 12: Field Element(0x493620c5563293fdfd223c427d651de5969eda4c90feac38e0250d4242de26a)",
+		"P->V[512:544]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 13: Field Element(0x10cbcecf87f693482681a53c71b5ad84500bb66579c41b65eb850d134ea7099)",
+		"P->V[544:576]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 14: Field Element(0x52fff59af2c40e6a6152f997a08a44d441cf85334d05c0436d78e2f9500307a)",
+		"P->V[576:608]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 15: Field Element(0x510f814940e27a4baffa1eb978c154c10343c51c75a748b7b4c6a81eacfd93a)",
+		"P->V[608:640]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 16: Field Element(0x3c2570cb4eb9c80b7f28c83be5235c372b8f2f9a9b989eb47be0cc943e1c938)",
+		"P->V[640:672]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 17: Field Element(0x3e3333776bb056255ada181102e410c8b950ae3ed5e672b97b47f8d0d1bd62c)",
+		"P->V[672:704]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 18: Field Element(0x6a0373fa7e2182551822471d59d09f61c60aeb620683a7acbfce4b6180073f4)",
+		"P->V[704:736]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 19: Field Element(0x2e2a167cf8be63d50fab91d2c32b652183ee0d6f0317d420626fa9bf9641907)",
+		"P->V[736:768]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 20: Field Element(0x2f0efc199ee7281501c2e015edf37bdd80955903bd1148f6dcdb3dbca31af60)",
+		"P->V[768:800]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 21: Field Element(0x29b7c093167d3c49756cb288d6c223674fad0139bf010f791615a16913889ca)",
+		"P->V[800:832]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 22: Field Element(0x4ab7bebd60bcf3cfd441218a2825e175e1c942a5f64ca3fa4f6420de420b906)",
+		"P->V[832:864]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 23: Field Element(0x4555fb61e19bd30144a03112bb1d5603589c9b9ae1b35e5e5c485d1f2b8be72)",
+		"P->V[864:896]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 24: Field Element(0xf71e0de44c8cf896251390cb65e40bc1242df8c411551ab69a71d77189ddc)",
+		"P->V[896:928]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 25: Field Element(0x308b1d1c4136a9a00fd0b69dea1e1fb778cf21702f1feec101413a147ec9e45)",
+		"P->V[928:960]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 26: Field Element(0x4370d6590c4715ab1ee4547f3f14e23521b3ed60d4049ee74967201f1b6218e)",
+		"P->V[960:992]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 27: Field Element(0x74f597ffb233f8115c1c5b3a436b743965b9bf049565b3d627d532fbe90c3f4)",
+		"P->V[992:1024]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 28: Field Element(0x4ea0dbbe2655092981a77814cd091dd4359677d373e67f376f7c877a3488123)",
+		"P->V[1024:1056]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 29: Field Element(0x6bcbf39345da04b8fa2d223f63708734bb375d53f3b9df006d28ce975df46b0)",
+		"P->V[1056:1088]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 30: Field Element(0x6a8acb30cfc1bba028bf9f6728848e85f84018332dc0645f93699e53f3aa7cd)",
+		"P->V[1088:1120]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 31: Field Element(0x2816a1a9c350807faf797ba9ffdda8ac180af9eac946d7feb2c46dc3562ac75)",
+		"P->V[1120:1152]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 32: Field Element(0x144ca8ad0f41a5c37bb34511e5ec11c4bfe8e4ba89c2e80cbd6830a7d1e6e62)",
+		"P->V[1152:1184]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 33: Field Element(0x43ba149d6ce56afc7fcede3f6cf3f654b5db3e87d7eb9e6d597b5367f48bd0e)",
+		"P->V[1184:1216]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 34: Field Element(0x1a766d9a994bac62fe842c6319866840794e139646e0abb12d8a1c0a4fabb33)",
+		"P->V[1216:1248]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 35: Field Element(0x37038760de6bbdbef6d6157688f91b89f29a68b9117226bd36ad2e6a60a5b34)",
+		"P->V[1248:1280]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 36: Field Element(0x73e6b09118063863e49b09fcddb1258999b59825d06fb41e2e1cfe4c0818e08)",
+		"P->V[1280:1312]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 37: Field Element(0x7b64e3254a41bc93b14e7b29088cbfbf3350d5124ee1e4264bd203e2b93663e)",
+		"P->V[1312:1344]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 38: Field Element(0x6d378d464c05a19c02749d04f72764e3a222818e47b7012e97b712b7b537ab5)",
+		"P->V[1344:1376]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 39: Field Element(0x356698aacd77a25b0945555d1815e457319577e5bafb6bc8c04cb3075ba2b9d)",
+		"P->V[1376:1408]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 40: Field Element(0x350c2035b9d5a7f1660f39f1b1b9d937710c5b2f25b65cc48727ad09d838f3a)",
+		"P->V[1408:1440]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 41: Field Element(0x1f7626a8162b5e21ea60cf2112e6e07214dbd51483b5d813c526b89443abc2f)",
+		"P->V[1440:1472]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 42: Field Element(0x1419487ec61c0928dcc65697022ad09e91293c429dba5ee0f926ac1021cde56)",
+		"P->V[1472:1504]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 43: Field Element(0x7c06da57d471298ce18620b6f60b1910a3b9aa0807a9e01b325f1be121c4b5e)",
+		"P->V[1504:1536]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 44: Field Element(0x3095128ffb194adb6c6db10010ebcb02f552f0e833819ce3aa78b14c4e08e3b)",
+		"P->V[1536:1568]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 45: Field Element(0x40a401d46d8d68b9cede2a236aaffed4f74d8c02f3c70bd9496d1f531f9fb5)",
+		"P->V[1568:1600]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 46: Field Element(0x294420aef034c726cb336f1741a6649056b966c3312c9bcb2c7ecc10894d4df)",
+		"P->V[1600:1632]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 47: Field Element(0x3e224d8923b5020ef2306988146804e879d9b3d61226cea43f1be96e141f71f)",
+		"P->V[1632:1664]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 48: Field Element(0x4633fe58a442ffd2cfe117800cc2c6b8044d174cc9c82cd0eea468e5f0a1ae2)",
+		"P->V[1664:1696]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 49: Field Element(0x54b6c2727e581413b9340710c935df6dc7beff49a03a810c19105e91dbe357f)",
+		"P->V[1696:1728]: /cpu air/STARK/Out Of Domain Sampling/OODS values: 50: Field Element(0x17babe14ae8f80b15b06cd4106b36bbd7ebac2e9ba2eb3fd59e5510917bbd5)",
+		"V->P: /cpu air/STARK/Out Of Domain Sampling: Constraint polynomial random element: Field Element(0x2cbaf96053b1d0f1ac522a2f114b4f9894af8b238f8272f90c4d06f02e3bbd)",
+		"P->V[1728:1760]: /cpu air/STARK/FRI/Commitment/Layer 1: Commitment: Hash(0x638f376e7c3a97babb8b62dfe3fa24fe04735bf3538b88abe730c743016cb6e5)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 2: Evaluation point: Field Element(0x2b11e4e94da9d1980a28287ddde2cde9404803c9a6243084a07e001f7be9ed8)",
+		"P->V[1760:1792]: /cpu air/STARK/FRI/Commitment/Layer 2: Commitment: Hash(0x4c8cc8abfa383a5c56686c5969a5299a67099f7a941cbd94b3b5341a9d896c44)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 3: Evaluation point: Field Element(0x41f53dd6447dc71c64ec7c290a8b4044c9e89f50c1800cce162c38955951f1f)",
+		"P->V[1792:1824]: /cpu air/STARK/FRI/Commitment/Layer 3: Commitment: Hash(0xb4a27781df726dec80170553aebbad85b1619b1780f65a1c88474e67389adb42)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 4: Evaluation point: Field Element(0x8382d9179032c27dc99a4f004dd55af8265d4f5a710ae72a850ff604e96b7f)",
+		"P->V[1824:1856]: /cpu air/STARK/FRI/Commitment/Layer 4: Commitment: Hash(0x8eaf999269db4aa780db6f8a4ee369564cadeea1db00c885bc1ef0816a38e05d)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 5: Evaluation point: Field Element(0x69c104c67e10af9f9a830ca9bffd506fb2adf5e76136f3bd7994b3dc86a1291)",
+		"P->V[1856:1888]: /cpu air/STARK/FRI/Commitment/Layer 5: Commitment: Hash(0x4b8c963ce71c48e040b203e5c5d0349dda9fa7c50dfca8cd8b8cf488b3ee8480)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 6: Evaluation point: Field Element(0x613504ca133ffdf39ea79f8d84ea5f379e649942bad16f65736bd4f832e6f97)",
+		"P->V[1888:1920]: /cpu air/STARK/FRI/Commitment/Layer 6: Commitment: Hash(0xa936f9e78418043cb4096215f669c19f365aac75dee3ac57bbe92b9a0c41d83a)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 7: Evaluation point: Field Element(0x360990bef8609ba810890d38dd7e1e48726bd9a191161bfd5d5e5f100170bb)",
+		"P->V[1920:1952]: /cpu air/STARK/FRI/Commitment/Layer 7: Commitment: Hash(0x714940ee22c3fc871ff7d0d6d3c9704b2c6e145deaa039531b9f3b47f83f88a3)",
+		"V->P: /cpu air/STARK/FRI/Commitment/Layer 8: Evaluation point: Field Element(0x620d0c63d6f2bcab3442eaa070fc5788a3f04785d8bb22406f6eaefd8cfbde5)",
+		"P->V[1952:1984]: /cpu air/STARK/FRI/Commitment/Last Layer: Coefficients: Field Elements(0x13b3079ca787b3ed4b0840ed4ec21945137d5d2d537db123c195657cea2f0ab)",
+		"P->V[1984:1992]: /cpu air/STARK/FRI/Proof of Work: POW: Data(0x19b)",
+		"V->P: /cpu air/STARK/FRI/QueryIndices: 0: Number(8)",
+		"P->V[1992:2024]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 0: Field Element(0x30647d2a78f9e777d0d7138691b50d02216c589e8e31ed7240cddbe41ffe4c2)",
+		"P->V[2024:2056]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 1: Field Element(0x15bba5755df849764da87f5dd30217e675853cab097e8028928aee52e4e423)",
+		"P->V[2056:2088]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 2: Field Element(0xa17fa237a1c0f8cfb05e99c6ccb3de16c227d543ca384c9ba2a13dffbff2d7)",
+		"P->V[2088:2120]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 3: Field Element(0xc9e18ed79a54bb1e6a44da4b026ec13c52ee4ed6c6aca66b0d89e50c586a8c)",
+		"P->V[2120:2152]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 4: Field Element(0x26d4debec31fa9c86632a0b1527b00dfa6d3414ac4b760f4d3157b8e234e9f2)",
+		"P->V[2152:2184]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: Row 8, Column 5: Field Element(0x5814759b7730799104a6c33fb05625bafc1f429b71e3bc81b0874537233115)",
+		"P->V[2184:2216]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 265: Hash(0x4d10ec514e6b95c6649714bdd2f7205eb8e13868e45818ff6dce9b352075d0d5)",
+		"P->V[2216:2248]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 133: Hash(0x2b9590744c27ae811b123eb892b5bca1c8bd4823f962b5ac49fb2b9903b4f61f)",
+		"P->V[2248:2280]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 67: Hash(0x4fc6d32a5e82e2be69e92088363ee9e7edf43685448511b06c33a55241232c90)",
+		"P->V[2280:2312]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 32: Hash(0xc58ed0fcb8abcf9624aa5f93733f519f9b0586f111cd3bd034ad5c02beafad5a)",
+		"P->V[2312:2344]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 17: Hash(0xd58cbaf57985774babd803c8a69a98034e2bdf07de86f93fb2a66fba61121345)",
+		"P->V[2344:2376]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 9: Hash(0x246fa8358d447fe0f7fe50d5adca33b39536b128c387821c6334221a9fe59376)",
+		"P->V[2376:2408]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 5: Hash(0x1aabdcce54795b369daa53bdeea91cfbcbc827332293b0be2f9ec49205be16c5)",
+		"P->V[2408:2440]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 0: For node 3: Hash(0xcd09549b6d21f17b7e920d90404dc041f7928e75ae04244eba29c9c5b00363df)",
+		"P->V[2440:2472]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: Row 8, Column 0: Field Element(0x69474e7600ec5c51ea12ee5778c345ed229132129775f9f6286e91457ef04d1)",
+		"P->V[2472:2504]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: Row 8, Column 1: Field Element(0x50d27aa0435356ce558712c69f24098ca447144cdfebfc3cf933eb022454f6c)",
+		"P->V[2504:2536]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 265: Hash(0x36116a87a589d3d3e33f240e372d5ba057e8c215c977160c8ea440edda575977)",
+		"P->V[2536:2568]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 133: Hash(0x7c55990420384398a0852bb0d208749cf7c8213c1d08079b23eb8a0f0ef81827)",
+		"P->V[2568:2600]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 67: Hash(0xab4edfe81dfbb87e3f981a85f73195fc29edf38c56346739ed45a871e642b6e7)",
+		"P->V[2600:2632]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 32: Hash(0x2f4c0fa31262783ff37eae8384bf44c41210f74b38844f56ab86ebcb608d2c10)",
+		"P->V[2632:2664]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 17: Hash(0x353e6d8451e2cf54ec015c878da3a196bf1062bacef87f5d17828bf04498f84d)",
+		"P->V[2664:2696]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 9: Hash(0x662086c5a1c19a1c50405c72509a5a5976ec5c438d2647f2a97a2d824f926fec)",
+		"P->V[2696:2728]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 5: Hash(0xc4a07ace8160d29a02d7d6882c6f4fc0c50a1a9da08ce401f512fb8a42ed581)",
+		"P->V[2728:2760]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 1: For node 3: Hash(0x792fa1ffe5df3004a741c1abe46ee99a4ee55df051f7f6f0741a0efad25d841e)",
+		"P->V[2760:2792]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: Row 8, Column 0: Field Element(0x1cbfde00444df2661561e9fa1bc3972c861e4d40508a138079e6548188026ca)",
+		"P->V[2792:2824]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: Row 8, Column 1: Field Element(0x6b57675901975694102a14f2e34fb8892ca60f7661de99db3af83e835ca515a)",
+		"P->V[2824:2856]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 265: Hash(0x17e2cb8234ce58e4bc661128521a86a7bbb6850be91883f3a62a54ce47280cd8)",
+		"P->V[2856:2888]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 133: Hash(0xe6459057a04d7dd551fa67b52c338261d530c05faa96a26aa875e52e21821337)",
+		"P->V[2888:2920]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 67: Hash(0xb54a818136c4972c933762f0e45370973ff315e45b372dc033a7000eb900db09)",
+		"P->V[2920:2952]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 32: Hash(0xa375f891e3c5761b4b042c82e2084c191be3f4f889e79a67b587b4de01d3fee2)",
+		"P->V[2952:2984]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 17: Hash(0xb47ec0c11700cc93a84db438bec0ab3147a422e589c8c61fb71463ffec465f2f)",
+		"P->V[2984:3016]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 9: Hash(0xfca2b49637fe853c9e34987867b6780ddaa585b0a55ca5bce63a8cb0365201ab)",
+		"P->V[3016:3048]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 5: Hash(0x1fd05268da1af671f51034272a61e0402c8cee0afbd3403fc0a637f0449e74b9)",
+		"P->V[3048:3080]: /cpu air/STARK/FRI/Decommitment/Layer 0/Virtual Oracle/Trace 2: For node 3: Hash(0xe2b78d1701f7ab99c8523a8a305b3ec131ba390b49a22ae52251a9d6cc6178d5)",
+		"P->V[3080:3112]: /cpu air/STARK/FRI/Decommitment/Layer 1: Row 4, Column 1: Field Element(0xb41a2b6ec893b22e435138c89866098f1a65a5e612d2bbd09c67cce330ae14)",
+		"P->V[3112:3144]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 133: Hash(0x575a98d5011ceafd49a551b40b549c37301e65acab9525550d4234a42f83f1d6)",
+		"P->V[3144:3176]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 67: Hash(0x8095aab1826454f0b629143ab44da04c1776b80b09630dd77425909ffb0e0185)",
+		"P->V[3176:3208]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 32: Hash(0xbd971ade607b2716f2a816fb71c4b8f63337954b05fbc0cc9cfe27719aee261a)",
+		"P->V[3208:3240]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 17: Hash(0x8df536748d8ff318d294ce994334bb9c16624fd8b83cefec1671d9f41ccbe5aa)",
+		"P->V[3240:3272]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 9: Hash(0x6cc2f4f082afde51a9cc8355076c80aaea2e09d1050f564d27100342388d5dbb)",
+		"P->V[3272:3304]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 5: Hash(0xfd71cb1d4ee50521f23cf1bf7d963b241d4951d8e71fe8f68351350c23e29ee8)",
+		"P->V[3304:3336]: /cpu air/STARK/FRI/Decommitment/Layer 1: For node 3: Hash(0x2d65af2476fb6662cac014e6b0e1df1d802cca8c9ca6b9e23dab58b8e21eb06c)",
+		"P->V[3336:3368]: /cpu air/STARK/FRI/Decommitment/Layer 2: Row 2, Column 1: Field Element(0x1c80df4337769d6452dd30afe2b2b3158226fa193fc49dece3f4b729eac7cf7)",
+		"P->V[3368:3400]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 67: Hash(0x364875d5f9f7e0ca22edca84d37e60360c9393f144e8e20528f12925e3b0a4a1)",
+		"P->V[3400:3432]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 32: Hash(0x8afe3c32771ffd3ac9e412d79b043b0dcfc8d9e6d7df85999488394d8ebce85d)",
+		"P->V[3432:3464]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 17: Hash(0xcaf68ddfcd9e7c08bfb9c552624bd7959f004f056894b99d0fac7e277067273a)",
+		"P->V[3464:3496]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 9: Hash(0x970d82c58ec150dd3efb3214ff6221a8c6eee3e54187e87b7ad064024eac239d)",
+		"P->V[3496:3528]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 5: Hash(0xcebcc9f1d7aa1e2cee3acfed11fa89fa72732d8a0a04ac9b6084de311f7b8179)",
+		"P->V[3528:3560]: /cpu air/STARK/FRI/Decommitment/Layer 2: For node 3: Hash(0xa2bcc94785ff9d4e390e8b9940fd88db976a0349d042461a9d342d3a6399a5ca)",
+		"P->V[3560:3592]: /cpu air/STARK/FRI/Decommitment/Layer 3: Row 1, Column 1: Field Element(0x5cb1dc2706d2ea2c9b176751a376819602b8460e8758e45f45dd45908e053cd)",
+		"P->V[3592:3624]: /cpu air/STARK/FRI/Decommitment/Layer 3: For node 32: Hash(0x7305e70d3d6d21fb43e105093bb8fa16f8b589485aeabd385466c4f25f5e5e15)",
+		"P->V[3624:3656]: /cpu air/STARK/FRI/Decommitment/Layer 3: For node 17: Hash(0x86f84026c491e47ae3345f787b6cb2ad3f4a51d4c6c18e537b769fb208213a50)",
+		"P->V[3656:3688]: /cpu air/STARK/FRI/Decommitment/Layer 3: For node 9: Hash(0x44dd354415673aee1f3e6ae54bf259fbe71e6ca52994767a82cb1654b5d7480c)",
+		"P->V[3688:3720]: /cpu air/STARK/FRI/Decommitment/Layer 3: For node 5: Hash(0xc1ecb0a8a5a0281ae5c0d29565f407a7407d0395ef4d9e18a5d4e803a2939e25)",
+		"P->V[3720:3752]: /cpu air/STARK/FRI/Decommitment/Layer 3: For node 3: Hash(0x588430d5076013f3507c1baa0a38a7e32376fe71556ada0c0764841a88e654dd)",
+		"P->V[3752:3784]: /cpu air/STARK/FRI/Decommitment/Layer 4: Row 0, Column 0: Field Element(0x4d2977bef50e6f4fe58a39aaa53547ce338588c34778e82ef6a8ab5fdbf8c06)",
+		"P->V[3784:3816]: /cpu air/STARK/FRI/Decommitment/Layer 4: For node 17: Hash(0xd78674425dad243add987845190a2a3e01185bc336cfbccbb57fee71a0b78713)",
+		"P->V[3816:3848]: /cpu air/STARK/FRI/Decommitment/Layer 4: For node 9: Hash(0x248293bfd3ca2f2e803db2a23f6c29571ead74bd07bf4640ce90a51da713819a)",
+		"P->V[3848:3880]: /cpu air/STARK/FRI/Decommitment/Layer 4: For node 5: Hash(0x3e1e669f9be3ccb215eb83cae508181acd2553b00a0e9522dc61267409e3d1fc)",
+		"P->V[3880:3912]: /cpu air/STARK/FRI/Decommitment/Layer 4: For node 3: Hash(0xd83a528eb03d276128f9f62e33d60122b93944b04aa35fd6512c1f7fbd8c4b54)",
+		"P->V[3912:3944]: /cpu air/STARK/FRI/Decommitment/Layer 5: Row 0, Column 1: Field Element(0x5758cb729db6c5f27127e04b3b1066a349e65d729ec15cb07211b2363dd4d29)",
+		"P->V[3944:3976]: /cpu air/STARK/FRI/Decommitment/Layer 5: For node 9: Hash(0x3aa297f07aa1b40c12884bd7951b9ee3af163ecbf9c85bbfabd1ac88bc0b3fde)",
+		"P->V[3976:4008]: /cpu air/STARK/FRI/Decommitment/Layer 5: For node 5: Hash(0xe555bcc9c464ac2c8bf35e4ebafe8981dfbfc3288dd15c4d918ac2a8abb9c619)",
+		"P->V[4008:4040]: /cpu air/STARK/FRI/Decommitment/Layer 5: For node 3: Hash(0xa9edebfb3db5e9519b55835d8a178ef88e56ecac78097cbedbd44a14dc1e83cf)",
+		"P->V[4040:4072]: /cpu air/STARK/FRI/Decommitment/Layer 6: Row 0, Column 1: Field Element(0x1de1e5a4c4eaf9c7f271de73d42775e2eee3fa46e84f1506164d58c5cdd9dd4)",
+		"P->V[4072:4104]: /cpu air/STARK/FRI/Decommitment/Layer 6: For node 5: Hash(0x99a9779995a5b44f7ca842b1d6ba49ef9c736d264ef9484bd8d3cd3e1ba38dc)",
+		"P->V[4104:4136]: /cpu air/STARK/FRI/Decommitment/Layer 6: For node 3: Hash(0x3ab94fea9867dd6c2cf28abf599c6a8abe8fe37b7b57c4b07927ba7668839439)",
+		"P->V[4136:4168]: /cpu air/STARK/FRI/Decommitment/Layer 7: Row 0, Column 1: Field Element(0x13515eaed415d075685f9f595e182ad108ea76b59ea0cbe8986e6cc0a5c6c0)",
+		"P->V[4168:4200]: /cpu air/STARK/FRI/Decommitment/Layer 7: For node 3: Hash(0xe1bec2d0d6550b1105ff842423d590f4025f83fcfce12650595c6deb7c7a3dc7)",
+		"",
+		"Proof Statistics:",
+		"",
+		"Byte count: 4200",
+		"Hash count: 62",
+		"Commitment count: 10",
+		"Field element count: 69",
+		"Data count: 1"
+	],
+	"private_input" : 
+	{
+		"memory_path" : "/home/bartosz/workshop/lambdaclass/stone-platinum/stone-prover/e2e_test/program_memory.bin",
+		"trace_path" : "/home/bartosz/workshop/lambdaclass/stone-platinum/stone-prover/e2e_test/program_trace.bin"
+	},
+	"proof_hex" : "0x25fbf558458959c672b5ac89659e9d8b3affee6a2effc91d44b21afdfc20424e028ad0bf228eb5490bccc062fe7cdb721ccd9714345d9018f0a2854a31243b7214446dc45a045db7a2800bdde0512c81280bcbadc51346870e7f5bc5d50eda15005189a057e0103fd57b7261f45d656fbbba3c78fa4d73f8d9d64638da7e915e030f2b537bd7008d0556bac829dd3a11af6b1fe026cdc686c33668d66cf2d3710292f9382f6cc3753f71276221046cc96c0bc17e51ab4bf7a51e9869978b128004f927a79cf17cb06cafed34624d2671ffacc6a20e88ea08bf6b7eb63a67348c0050538cf9f8386e05d1cdca205df4feffcfb444d5859af224254f4995e9087803485fa7a83b5f98c1c0ed1615d1af361761a1f49c204768c826338b23486a750168f8db0c529176ee52877330854b2d0fd4c137965f0a5d252698beef1a26e204581ee79fe1f7a0e1a151de724e382c844d8192cbda29b431fea7a14bf5072302fb1b6b7028795596803b12751678efc73a14056f34f56120230498d16ce1da060f085159053898a5e1d07d790afe82a8cf84b96a3a0f29773e85f60cbcbf0d07f0769b0182b2a028108e472cd8a0c826f540b8351e2e0496ac3cc10cb79c6f01eb131218b8a85b519a76ad97d949940234a3852374c98d4393ac6be134869e07e31e0e7b39258f2bc6ce295c282677cc4c338308b0e8fc1dc86f0902549b1405e43c6ca823fb66152ba788f485ffea6324902d6fb7f7217b43854bfbc4c5bf068f77801c2df8dafd2ddf588025ccdd7ae6598915a128d3fb8ff6bf69832e5f02ee1e3e8750676e21f139e0d1023c15d8dd780aeff1c023bfd39884c44c8cdd00bd228d9ba97ddaa0cdcf96cb49593bf388805accf12331862da5e4035c0fd206b8ea2d6508942ca3e68b67a7a3cb724376673e1822c7bdadd4aa6b129cc77f0067eb63ef095df85e685a5d5ac4ed73d62a22db10801a7f66d957b9efb932e00630da90ba6b2da913886f7ba2cfde537636fe680017e66406440f80a0b34a9f01d7fb2954a81f69fc29acb77a81b88d2646481432354220f0f0599c089d8e0c02a4bf0fdb9fc07c62190c0de6ba78a0eb6c600235bd8b198d88b87ba627307e06364575f20fcc52e46861c6d2bdcd8ede9db4344011e8725218cf3b55daec6501850fe3c0c574b6242bfdd96003a72c714b5ade34d604d2874e2d91621df27201da119b5844fc8eedf593e8ae8b4faed3dd559b8fd402485c7531bf7a676abc03435259e3875fa62f9a4ad95412f26be682af4cf97cfd3427c90844d8d228980678f8f20e2441b061c65175afeff1c5f72b0b287a14fd8431ba09be5ca11568067e428768eeff8c5b8d4840d603410aa852f8300e4a61ae000633e9cfd7efde076424cc196c28dc2856f7f94f51eea1dc041e908a17e99d9845fde6241f6cd10257dc6e6be9eee92e70ed6a17af3633d998c3e5c43913d0c10e1a904acd0e810457436005604a497c6050a4a650896bc2d471b8395b3242d5bb1bde36e03875034b8b485eb17191013c1a2a16656345303272bad5ff5cfc2f4357729504d98603186a0c478be8e44e66555d0b27a3efe6b8d0d3383dd21c3c73ddd8d8d3b7c5013b95bd6223ed90d739e08ff51c60cd394c510773db0f0b8add2959e56865ca046af77e96238edb7a4978454e8ee53b3144458c82978ad4f3d7fd55dea19521069dd90b77d8444ae15330c437f243ad4a038d96fa4be2484b18c2575d73bfef0489b45c5d7ca4ddcb3854ac5f0946bcf4e0e16a6b6a463b45e70143adf901290387c7397d3853190a286829864399cc0380fd9e1295662bf6410853101a1af40496ef056fbc8bde272f30b9299c32e57773736b04a5d604fb3c9726b529dee6052147641dee8d10e17e2b2f0c4457f270b94c3a78ce453ef5a49db0926766a4076d76ba61fdc2c7a76a70726894306d5bb8568379ac5e1409f8ce89c1462e3900ed35b100caf239e162ac1c1281331ce49a9a2fa607b272ad2ae996a84d46780623ddb6505f0688b1e76d9bf2d096e8d1e49c16c94a938007e6f773fdeac53507a82690bdba0a575a13b3d8f4d6047f4eae7ee7a9e2b14268741bf4babde742048aa79944b60c03a0b381eb09a4d7c497e60abb1ab24475e237cfcea91cbe2c025e1f852380a483f1b4b728ac39ad03c1111811a6f7768a927f3692ce3022ea0244d65070d771a3cb24094e5d00270fa5f96bf3fd53c728f4fd01649b5e2d2203eda2d89809f4cf2d68b3c79876848e8dce902fdfd8b3ca2ad5c7682b430e950140df928d469d89bd36c9ba0337387de2f9261f97179adbd1462b130c9390b5011f8425f6519fd19652587763e697e5018603b87588374491175ae286c3de810663bbab3b84cd3c2239a3d63d47b43f95ac8060905b2262463288ac1b5f748c638f376e7c3a97babb8b62dfe3fa24fe04735bf3538b88abe730c743016cb6e54c8cc8abfa383a5c56686c5969a5299a67099f7a941cbd94b3b5341a9d896c44b4a27781df726dec80170553aebbad85b1619b1780f65a1c88474e67389adb428eaf999269db4aa780db6f8a4ee369564cadeea1db00c885bc1ef0816a38e05d4b8c963ce71c48e040b203e5c5d0349dda9fa7c50dfca8cd8b8cf488b3ee8480a936f9e78418043cb4096215f669c19f365aac75dee3ac57bbe92b9a0c41d83a714940ee22c3fc871ff7d0d6d3c9704b2c6e145deaa039531b9f3b47f83f88a30019b5871baeeaa922cfd7ed6337cc0bdf5a6d328273047ddcad29b0f7385f30000000000000019b07ecf216bbae76860965cd7502abee27c4d2b61d364210993ea14a2473a0222800e2e6883deabfe2fc22e3413b93342b672c6dcc060153bfaf4550a8e091844c04020ba4ea2555c5efdb438e1dab403f75cb77587ad06f923b4e3c3b0d148e6502a265a6c77729f3d2a155fb9e3369f8decb7f74f9e93a592ddfeacb6556b102043a9127d0d42d4a3c4d695aa19a33408dd99cd30ee454e8eb67c864142e52d603de3065f9b1d1c544da64e3b2d554165065b3d08c70d904f1d0fc2eabccb2e04d10ec514e6b95c6649714bdd2f7205eb8e13868e45818ff6dce9b352075d0d52b9590744c27ae811b123eb892b5bca1c8bd4823f962b5ac49fb2b9903b4f61f4fc6d32a5e82e2be69e92088363ee9e7edf43685448511b06c33a55241232c90c58ed0fcb8abcf9624aa5f93733f519f9b0586f111cd3bd034ad5c02beafad5ad58cbaf57985774babd803c8a69a98034e2bdf07de86f93fb2a66fba61121345246fa8358d447fe0f7fe50d5adca33b39536b128c387821c6334221a9fe593761aabdcce54795b369daa53bdeea91cfbcbc827332293b0be2f9ec49205be16c5cd09549b6d21f17b7e920d90404dc041f7928e75ae04244eba29c9c5b00363df01616ab24a8683cc9ae798d4fafe197c8eb8d745751de364665969dc229c30a102af1d6d1000b2c8d37b0390e3e5ffe5520a4381f7684037b7c8b5cdf9cd9c2e36116a87a589d3d3e33f240e372d5ba057e8c215c977160c8ea440edda5759777c55990420384398a0852bb0d208749cf7c8213c1d08079b23eb8a0f0ef81827ab4edfe81dfbb87e3f981a85f73195fc29edf38c56346739ed45a871e642b6e72f4c0fa31262783ff37eae8384bf44c41210f74b38844f56ab86ebcb608d2c10353e6d8451e2cf54ec015c878da3a196bf1062bacef87f5d17828bf04498f84d662086c5a1c19a1c50405c72509a5a5976ec5c438d2647f2a97a2d824f926fec0c4a07ace8160d29a02d7d6882c6f4fc0c50a1a9da08ce401f512fb8a42ed581792fa1ffe5df3004a741c1abe46ee99a4ee55df051f7f6f0741a0efad25d841e057b950bcc95faef04abad2e13bdffdd06f363956b2c235046ffb97932301c31078b481df34a464413231060fc8cbac4fc3112fa9135e9b1a1c72e84b4253b6417e2cb8234ce58e4bc661128521a86a7bbb6850be91883f3a62a54ce47280cd8e6459057a04d7dd551fa67b52c338261d530c05faa96a26aa875e52e21821337b54a818136c4972c933762f0e45370973ff315e45b372dc033a7000eb900db09a375f891e3c5761b4b042c82e2084c191be3f4f889e79a67b587b4de01d3fee2b47ec0c11700cc93a84db438bec0ab3147a422e589c8c61fb71463ffec465f2ffca2b49637fe853c9e34987867b6780ddaa585b0a55ca5bce63a8cb0365201ab1fd05268da1af671f51034272a61e0402c8cee0afbd3403fc0a637f0449e74b9e2b78d1701f7ab99c8523a8a305b3ec131ba390b49a22ae52251a9d6cc6178d500693fc536e1bac40e896254342e2d6f38c258545b851c2d4f7753211f0e5d3a575a98d5011ceafd49a551b40b549c37301e65acab9525550d4234a42f83f1d68095aab1826454f0b629143ab44da04c1776b80b09630dd77425909ffb0e0185bd971ade607b2716f2a816fb71c4b8f63337954b05fbc0cc9cfe27719aee261a8df536748d8ff318d294ce994334bb9c16624fd8b83cefec1671d9f41ccbe5aa6cc2f4f082afde51a9cc8355076c80aaea2e09d1050f564d27100342388d5dbbfd71cb1d4ee50521f23cf1bf7d963b241d4951d8e71fe8f68351350c23e29ee82d65af2476fb6662cac014e6b0e1df1d802cca8c9ca6b9e23dab58b8e21eb06c0649c22a2ffea2cb7dfa7c4bf2b682c94769ea69bca0d86e770470fb54a4766b364875d5f9f7e0ca22edca84d37e60360c9393f144e8e20528f12925e3b0a4a18afe3c32771ffd3ac9e412d79b043b0dcfc8d9e6d7df85999488394d8ebce85dcaf68ddfcd9e7c08bfb9c552624bd7959f004f056894b99d0fac7e277067273a970d82c58ec150dd3efb3214ff6221a8c6eee3e54187e87b7ad064024eac239dcebcc9f1d7aa1e2cee3acfed11fa89fa72732d8a0a04ac9b6084de311f7b8179a2bcc94785ff9d4e390e8b9940fd88db976a0349d042461a9d342d3a6399a5ca02e9e44ebf1fe603bdb8d739b972f540d1c61938dd050d83af4fdc093938cea37305e70d3d6d21fb43e105093bb8fa16f8b589485aeabd385466c4f25f5e5e1586f84026c491e47ae3345f787b6cb2ad3f4a51d4c6c18e537b769fb208213a5044dd354415673aee1f3e6ae54bf259fbe71e6ca52994767a82cb1654b5d7480cc1ecb0a8a5a0281ae5c0d29565f407a7407d0395ef4d9e18a5d4e803a2939e25588430d5076013f3507c1baa0a38a7e32376fe71556ada0c0764841a88e654dd010c9faf8ffd05f02528783c32ebcb14a2f56e8d3bfea3c7c923bd20caf276c8d78674425dad243add987845190a2a3e01185bc336cfbccbb57fee71a0b78713248293bfd3ca2f2e803db2a23f6c29571ead74bd07bf4640ce90a51da713819a3e1e669f9be3ccb215eb83cae508181acd2553b00a0e9522dc61267409e3d1fcd83a528eb03d276128f9f62e33d60122b93944b04aa35fd6512c1f7fbd8c4b5407a6dd95049791c55710e687d2a564406849647b23083dc17fe715e912d31fc73aa297f07aa1b40c12884bd7951b9ee3af163ecbf9c85bbfabd1ac88bc0b3fdee555bcc9c464ac2c8bf35e4ebafe8981dfbfc3288dd15c4d918ac2a8abb9c619a9edebfb3db5e9519b55835d8a178ef88e56ecac78097cbedbd44a14dc1e83cf058ad2a423002e251b2c3f5d3e5598206431654db97e911eea6e094a3757e3d6099a9779995a5b44f7ca842b1d6ba49ef9c736d264ef9484bd8d3cd3e1ba38dc3ab94fea9867dd6c2cf28abf599c6a8abe8fe37b7b57c4b07927ba766883943906a1a7d6de729eb2749132852a084eee2a57562ffa842c68f35b0c739268c8fce1bec2d0d6550b1105ff842423d590f4025f83fcfce12650595c6deb7c7a3dc7",
+	"proof_parameters" : 
+	{
+		"channel_hash" : "keccak256",
+		"commitment_hash" : "keccak256",
+		"field" : "PrimeField0",
+		"n_verifier_friendly_commitment_layers" : 0,
+		"stark" : 
+		{
+			"fri" : 
+			{
+				"fri_step_list" : 
+				[
+					0,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1,
+					1
+				],
+				"last_layer_degree_bound" : 1,
+				"n_queries" : 1,
+				"proof_of_work_bits" : 10
+			},
+			"log_n_cosets" : 1
+		},
+		"statement" : 
+		{
+			"page_hash" : "pedersen"
+		},
+		"use_extension_field" : false
+	},
+	"prover_config" : 
+	{
+		"cached_lde_config" : 
+		{
+			"store_full_lde" : false,
+			"use_fft_for_eval" : false
+		},
+		"constraint_polynomial_task_size" : 256,
+		"n_out_of_memory_merkle_layers" : 1,
+		"table_prover_n_tasks_per_segment" : 32
+	},
+	"public_input" : 
+	{
+		"dynamic_params" : null,
+		"layout" : "plain",
+		"memory_segments" : 
+		{
+			"execution" : 
+			{
+				"begin_addr" : 16,
+				"stop_ptr" : 19
+			},
+			"program" : 
+			{
+				"begin_addr" : 1,
+				"stop_ptr" : 5
+			}
+		},
+		"n_steps" : 8,
+		"public_memory" : 
+		[
+			{
+				"address" : 1,
+				"page" : 0,
+				"value" : "0x40780017fff7fff"
+			},
+			{
+				"address" : 2,
+				"page" : 0,
+				"value" : "0x0"
+			},
+			{
+				"address" : 3,
+				"page" : 0,
+				"value" : "0x1104800180018000"
+			},
+			{
+				"address" : 4,
+				"page" : 0,
+				"value" : "0x4"
+			},
+			{
+				"address" : 5,
+				"page" : 0,
+				"value" : "0x10780017fff7fff"
+			},
+			{
+				"address" : 6,
+				"page" : 0,
+				"value" : "0x0"
+			},
+			{
+				"address" : 7,
+				"page" : 0,
+				"value" : "0x40780017fff7fff"
+			},
+			{
+				"address" : 8,
+				"page" : 0,
+				"value" : "0x0"
+			},
+			{
+				"address" : 9,
+				"page" : 0,
+				"value" : "0x480680017fff8000"
+			},
+			{
+				"address" : 10,
+				"page" : 0,
+				"value" : "0x1e"
+			},
+			{
+				"address" : 11,
+				"page" : 0,
+				"value" : "0x400680017fff7fff"
+			},
+			{
+				"address" : 12,
+				"page" : 0,
+				"value" : "0x1e"
+			},
+			{
+				"address" : 13,
+				"page" : 0,
+				"value" : "0x208b7fff7fff7ffe"
+			},
+			{
+				"address" : 14,
+				"page" : 0,
+				"value" : "0x10"
+			},
+			{
+				"address" : 15,
+				"page" : 0,
+				"value" : "0x0"
+			}
+		],
+		"rc_max" : 32769,
+		"rc_min" : 32766
+	},
+	"version" : 
+	{
+		"commit_hash" : "INVALID_COMMIT",
+		"proof_hash" : "INVALID_PROOF_HASH",
+		"statement_name" : "INVALID_NAME"
+	}
+}

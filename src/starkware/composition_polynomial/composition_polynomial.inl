@@ -263,7 +263,7 @@ void CompositionPolynomialImpl<AirT>::EvalOnCosetBitReversedOutput(
         FractionFieldElement<FieldElementT>::BatchToBaseFieldElement(in_span, out_span);
 
         for (size_t point_idx = initial_point_idx; point_idx < end_of_coset_index; point_idx++) {
-          out_evaluation[BitReverse(point_idx, log_coset_size)] =
+          out_evaluation[point_idx] =
               wm.batch_inverse_output[point_idx - initial_point_idx];
         }
       });

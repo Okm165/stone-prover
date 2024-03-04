@@ -35,6 +35,10 @@ template <size_t N>
 BigInt<N> BigInt<N>::RandomBigInt(PrngBase* prng) {
   std::array<std::byte, N * sizeof(uint64_t)> bytes{};
   prng->GetRandomBytes(bytes);
+  // printf("bigint \n");
+  // for (std::size_t i =0; i < bytes.size(); i++) {
+  //   printf("%d ", bytes.at(i));
+  // }
   return FromBytes(bytes);
 }
 

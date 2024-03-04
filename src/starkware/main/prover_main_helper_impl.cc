@@ -20,6 +20,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <stdio.h>
 
 #include "gflags/gflags.h"
 
@@ -96,9 +97,16 @@ std::vector<std::byte> ProverMainHelperImpl(
 
   std::unique_ptr<PrngBase> prng = InvokeByHashFunc(channel_hash, [&](auto hash_tag) {
     using HashT = typename decltype(hash_tag)::type;
-    PrngImpl<HashT> prng(statement->GetInitialHashChainSeed());
+    std::vector<std::byte> seed = statement->GetInitialHashChainSeed();
+    // for (auto val : seed) printf("%d ", val);
+    // printf("\n\n");
+    PrngImpl<HashT> prng(seed);
     return prng.Clone();
   });
+
+  // auto p = prng.get()->GetPrngState();
+  // printf("before \n");
+  // for (auto val : p) printf("%d ", val);
 
   NoninteractiveProverChannel channel(std::move(prng));
   if (!generate_annotations) {
@@ -140,6 +148,10 @@ std::vector<std::byte> ProverMainHelperImpl(
   // Note that in case there is an interaction, ProveStark creates a new Air with interaction
   // elements, which is destroyed when the function ends.
   prover.ProveStark(statement->GetTraceContext());
+
+  // auto z = channel.prng_.get()->GetPrngState();
+  // printf("after \n");
+  // for (auto val : z) printf("%d ", val);
 
   std::vector<std::byte> proof_bytes = channel.GetProof();
 

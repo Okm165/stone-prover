@@ -60,8 +60,27 @@ void MultiColumnPermutationComponent<FieldElementT>::WriteInteractionTrace(
       auto val_orig = originals[series_i][0][i];
       auto val_perm = perms[series_i][0][i];
       for (size_t elm_idx = 1; elm_idx < interaction_elms.size(); elm_idx++) {
+        // std::array<std::byte, 32> vec {};
+        // gsl::span<std::byte> span_out = gsl::make_span(vec);
+        // perms[series_i][elm_idx][i].ToBytes(span_out);
+        // printf("perms: ");
+        // for (std::size_t k = 0; k < span_out.length(); k++) {
+        //   auto z = span_out.at(k);
+        //   printf("%hhu ", z);
+        // }
+        // printf("\n");
         val_orig += interaction_elms[elm_idx] * originals[series_i][elm_idx][i];
         val_perm += interaction_elms[elm_idx] * perms[series_i][elm_idx][i];
+
+        // std::array<std::byte, 32> vec {};
+        // gsl::span<std::byte> span_out = gsl::make_span(vec);
+        // interaction_elms[elm_idx].ToBytes(span_out);
+        // printf("interaction_elms[elm_idx]: ");
+        // for (std::size_t k = 0; k < span_out.length(); k++) {
+        //   auto z = span_out.at(k);
+        //   printf("%hhu ", z);
+        // }
+        // printf("\n");
       }
       combined_original.push_back(val_orig);
       combined_perm.push_back(val_perm);

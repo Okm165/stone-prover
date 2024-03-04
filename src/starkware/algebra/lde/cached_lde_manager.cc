@@ -34,6 +34,9 @@ const CachedLdeManager::LdeCacheEntry* CachedLdeManager::EvalOnCoset(
     return &*cache_[coset_index];
   }
 
+  // printf("coset index: %lld", (long long)coset_index);
+  // printf("\n");
+
   const FieldElement& coset_offset = coset_offsets_->At(coset_index);
   if (coset_offset != previous_coset_offset_) {
     fft_precompute_->ShiftTwiddleFactors(coset_offset, previous_coset_offset_);

@@ -165,9 +165,35 @@ FieldElementVector CompositionOracleProver::EvalComposition(uint64_t task_size) 
         }
       }
     }
+    // for (auto&& column : all_evals) {
+    //   for (std::size_t i = 0; i < column.Size(); i++) {
+    //     auto val = column[i];
+    //     std::array<std::byte, 32> vec {};
+    //     gsl::span<std::byte> span_out = gsl::make_span(vec);
+    //     val.ToBytes(span_out);
+    //     printf("all_evals: ");
+    //     for (std::size_t l = 0; l < span_out.length(); l++) {
+    //       auto v = span_out.at(l);
+    //       printf("%hhu ", v);
+    //     }
+    //     printf("\n");
+    //   }
+    //   printf("\n");
+    // }
 
     const size_t coset_natural_index = BitReverse(coset_index, log_n_cosets);
     const FieldElement coset_offset = evaluation_domain_->CosetsOffsets()[coset_natural_index];
+
+    // std::array<std::byte, 32> vec {};
+    // gsl::span<std::byte> span_out = gsl::make_span(vec);
+    // coset_offset.ToBytes(span_out);
+    // printf("coset_offset: ");
+    // for (std::size_t l = 0; l < span_out.length(); l++) {
+    //   auto v = span_out.at(l);
+    //   printf("%hhu ", v);
+    // }
+    // printf("\n");
+
     ProfilingBlock composition_block("Actual point-wise computation");
     composition_polynomial_->EvalOnCosetBitReversedOutput(
         coset_offset, all_evals,

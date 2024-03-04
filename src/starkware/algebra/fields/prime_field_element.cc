@@ -44,7 +44,6 @@ PrimeFieldElement<NBits, Index> PrimeFieldElement<NBits, Index>::RandomElement(P
   while (element >= kBound) {
     element = ValueType::RandomBigInt(prng);
   }
-
   return PrimeFieldElement(element.Div(GetModulus()).second);
 }
 

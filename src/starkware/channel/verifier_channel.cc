@@ -63,6 +63,15 @@ uint64_t VerifierChannel::GetAndSendRandomNumberImpl(uint64_t upper_bound) {
 
 FieldElement VerifierChannel::GetAndSendRandomFieldElementImpl(const Field& field) {
   FieldElement field_element = GetRandomFieldElement(field);
+  // printf("field_element");
+  // std::array<std::byte, 32> vec {};
+  // gsl::span<std::byte> span_out = gsl::make_span(vec);
+  // field_element.ToBytes(span_out);
+  // for (std::size_t k = 0; k < span_out.length(); k++) {
+  //   auto z = span_out.at(k);
+  //   printf("%hhu ", z);
+  // }
+  // printf("\n");
   SendFieldElement(field_element);
   return field_element;
 }
