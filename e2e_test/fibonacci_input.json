@@ -1,3 +1,7 @@
 {
-    "fibonacci_claim_index": 10
+    "program_hash": 0,
+    "output_hash": 0,
+    "a": 1,
+    "b": 1,
+    "n": 10
 }
