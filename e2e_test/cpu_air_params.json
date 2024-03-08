@@ -13,14 +13,13 @@
                 0,
                 4,
                 4,
-                2,
-                2
+                4
             ],
             "last_layer_degree_bound": 128,
-            "n_queries": 10,
+            "n_queries": 16,
             "proof_of_work_bits": 30
         },
-        "log_n_cosets": 2
+        "log_n_cosets": 3
     },
 
     "use_extension_field": false,
