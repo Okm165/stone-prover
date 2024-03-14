@@ -102,22 +102,22 @@ void CommittedTraceProver::Commit(Trace&& trace, const FftBases& trace_domain, b
     // Commit to the LDE.
     ProfilingBlock commit_to_lde_block("Commit to LDE");
 
-    // std::vector<starkware::ConstFieldElementSpan> evals(lde_evaluations->begin(), lde_evaluations->end());
-    // for (std::size_t i = 0; i < evals.size(); i++) {
-    //   auto column = evals.at(i);
-    //   for (std::size_t l = 0; l < column.Size(); l++) {
-    //     auto v = column[l];
-    //     std::array<std::byte, 32> vec {};
-    //     gsl::span<std::byte> span_out = gsl::make_span(vec);
-    //     v.ToBytes(span_out);
-    //     for (std::size_t k = 0; k < span_out.length(); k++) {
-    //       auto z = span_out.at(k);
-    //       printf("%hhu ", z);
-    //     }
-    //     printf("\n");
-    //   }
-    //   printf("\n");
-    // }
+    std::vector<starkware::ConstFieldElementSpan> evals(lde_evaluations->begin(), lde_evaluations->end());
+    for (std::size_t i = 0; i < evals.size(); i++) {
+      auto column = evals.at(i);
+      for (std::size_t l = 0; l < column.Size(); l++) {
+        auto v = column[l];
+        std::array<std::byte, 32> vec {};
+        gsl::span<std::byte> span_out = gsl::make_span(vec);
+        v.ToBytes(span_out);
+        for (std::size_t k = 0; k < span_out.length(); k++) {
+          auto z = span_out.at(k);
+          printf("%hhu ", z);
+        }
+        printf("\n");
+      }
+      printf("\n");
+    }
 
     table_prover_->AddSegmentForCommitment(
         {lde_evaluations->begin(), lde_evaluations->end()}, coset_index);
